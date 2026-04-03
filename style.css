@@ -12,24 +12,29 @@ body {
     background: #1e1e2f;
     color: white;
     padding: 15px;
-    overflow-y: auto; /* scroll if content long */
+    overflow-y: auto;
 }
 
-/* ===== LARGE PROFILE IMAGE ===== */
-.profile-large {
-    width: 100%;       /* FULL WIDTH */
-    height: 200px;     /* BIG HEIGHT */
-    object-fit: cover; /* KEEP PROPORTION */
-    border-radius: 5px;
+/* ===== PROFILE IMAGE (FIXED LIKE YOUR FRIEND) ===== */
+/*
+- width: full sidebar width
+- height: controlled (NOT too tall)
+- object-fit: cover keeps image ratio nice
+*/
+.profile-img {
+    width: 100%;
+    height: 180px;      /* 🔥 Adjust this if needed (150–200 best) */
+    object-fit: cover;
+    border-radius: 4px;
 }
 
-/* ROLE TEXT */
+/* ===== ROLE TEXT ===== */
 .role {
     color: lightgray;
     margin-bottom: 10px;
 }
 
-/* LINKS */
+/* ===== LINKS ===== */
 .sidebar a {
     display: block;
     color: white;
@@ -37,7 +42,7 @@ body {
     text-decoration: none;
 }
 
-/* ===== WHITE BOX (Skills, Languages) ===== */
+/* ===== WHITE BOX (Skills & Languages) ===== */
 .box {
     background: white;
     color: black;
@@ -64,14 +69,14 @@ body {
     border-radius: 5px;
 }
 
-/* ===== INDIVIDUAL SKILL COLORS + WIDTH ===== */
+/* ===== SKILL COLORS ===== */
 .python { width: 90%; background: #4CAF50; }
 .cpp { width: 80%; background: #2196F3; }
 .matlab { width: 85%; background: #f39c12; }
 .yolo { width: 95%; background: #e74c3c; }
 .opencv { width: 85%; background: #9b59b6; }
 
-/* LANGUAGES */
+/* ===== LANGUAGE COLORS ===== */
 .eng { width: 90%; background: #4CAF50; }
 .ban { width: 100%; background: #2ecc71; }
 .malay { width: 50%; background: #f39c12; }
