@@ -3,30 +3,30 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/* ===== SIDEBAR ===== */
+/* Sidebar */
 .sidebar {
     position: fixed;
     width: 260px;
     height: 100%;
     background: #1e1e2f;
     color: white;
-    padding: 20px;
     text-align: center;
+    padding: 20px;
 }
 
-/* Square profile image */
+/* Square image */
 .profile-square {
-    width: 240px;
-    height: 240px;
+    width: 140px;
+    height: 140px;
     object-fit: cover;
 }
 
-/* Role */
+/* Role text */
 .role {
     color: lightgray;
 }
 
-/* Links */
+/* Sidebar links */
 .sidebar a {
     display: block;
     color: white;
@@ -43,7 +43,7 @@ body {
     border-radius: 8px;
 }
 
-/* ===== MAIN CONTENT ===== */
+/* Main content */
 .main {
     margin-left: 300px;
     padding: 20px;
@@ -60,6 +60,7 @@ body {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    cursor: pointer;
 }
 
 /* Sections */
@@ -68,7 +69,7 @@ body {
     margin-top: 30px;
 }
 
-/* Project cards */
+/* Cards */
 .card {
     background: #f2f2f2;
     padding: 15px;
