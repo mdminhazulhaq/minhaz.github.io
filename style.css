@@ -1,48 +1,59 @@
-/* ===== GENERAL PAGE SETTINGS ===== */
+/* ===== GENERAL ===== */
 body {
-    margin: 0; /* Remove default browser margin */
-    font-family: Arial, sans-serif; /* Clean readable font */
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
 
-/* ===== SIDEBAR DESIGN ===== */
+/* ===== SIDEBAR ===== */
 .sidebar {
-    position: fixed;          
-    width: 340px;  /* 🔥 UPDATED: 300px → 340px (+40px) */
-    height: 100vh;            
-    background: #1e1e2f;      
-    color: white;             
-    padding: 0;               /* No gap around image */
-    overflow-y: auto;         
-    overflow-x: hidden;       
+    position: fixed;
+
+    width: 380px;   /* 🔥 INCREASED WIDTH (clearly visible now) */
+
+    height: 100vh;
+    background: #1e1e2f;
+    color: white;
+
+    padding: 0; /* IMPORTANT: no gap around image */
+
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
-/* ===== PROFILE IMAGE ===== */
+/* ===== PROFILE IMAGE (AUTO FIT) ===== */
 .profile-img {
-    width: 340px;   /* 🔥 MUST match sidebar width */
-    height: 360px;  
+    width: 100%;   /* 🔥 ALWAYS MATCH SIDEBAR WIDTH */
+
+    height: 360px; /* fixed height (your requirement) */
+
     object-fit: cover;
+
     display: block;
 }
 
-/* ===== SIDEBAR CONTENT (TEXT AREA) ===== */
+/*
+IMPORTANT:
+- width: 100% → auto matches sidebar width
+- no need to manually update image width anymore
+*/
+
+/* ===== SIDEBAR CONTENT ===== */
 .sidebar-content {
     padding: 15px;
 }
 
-/* ===== NAME ===== */
+/* ===== TEXT ===== */
 .sidebar h2 {
     margin-top: 10px;
     font-size: 22px;
 }
 
-/* ===== ROLE TEXT ===== */
 .role {
     color: lightgray;
     margin-bottom: 10px;
     font-size: 15px;
 }
 
-/* ===== BASIC TEXT ===== */
 .sidebar p {
     font-size: 14px;
     margin: 5px 0;
@@ -54,10 +65,9 @@ body {
     color: white;
     margin: 6px 0;
     text-decoration: none;
-    font-size: 14px;
 }
 
-/* ===== WHITE BOX ===== */
+/* ===== BOX ===== */
 .box {
     background: white;
     color: black;
@@ -74,7 +84,6 @@ body {
     margin-bottom: 8px;
 }
 
-/* ===== SKILL PROGRESS ===== */
 .skill {
     height: 16px;
     color: white;
@@ -84,20 +93,21 @@ body {
     border-radius: 4px;
 }
 
-/* ===== SKILL LEVELS ===== */
+/* ===== SKILLS ===== */
 .python { width: 90%; background: #4CAF50; }
 .cpp { width: 80%; background: #2196F3; }
 .matlab { width: 85%; background: #f39c12; }
 .yolo { width: 95%; background: #e74c3c; }
 .opencv { width: 85%; background: #9b59b6; }
 
-/* ===== LANGUAGE LEVELS ===== */
+/* ===== LANGUAGES ===== */
 .eng { width: 90%; background: #4CAF50; }
 .ban { width: 100%; background: #2ecc71; }
 .malay { width: 50%; background: #f39c12; }
 
-/* ===== MAIN CONTENT AREA ===== */
+/* ===== MAIN CONTENT ===== */
 .main {
-    margin-left: 360px;  /* 🔥 UPDATED: sidebar (340px) + small gap */
+    margin-left: 400px;  /* 🔥 adjusted to match sidebar */
+
     padding: 20px;
 }
