@@ -16,8 +16,8 @@ body {
 
 /* Square profile image */
 .profile-square {
-    width: 140px;
-    height: 140px;
+    width: 240px;
+    height: 240px;
     object-fit: cover;
 }
 
