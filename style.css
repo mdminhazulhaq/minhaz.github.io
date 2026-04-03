@@ -7,7 +7,7 @@ body {
 /* ===== SIDEBAR DESIGN ===== */
 .sidebar {
     position: fixed;          /* Fix sidebar to left side */
-    width: 650px;             /* 🔥 MAIN CONTROL: increase/decrease sidebar width here */
+    width: 460px;             /* 🔥 MAIN CONTROL: increase/decrease sidebar width here */
     height: 100%;             /* Full height of screen */
     background: #1e1e2f;      /* Dark background */
     color: white;             /* Text color */
@@ -21,7 +21,7 @@ body {
 
     height: auto;             /* 🔥 IMPORTANT: keeps original ratio (NO CUTTING) */
 
-    max-height: 400px;        /* Limit height so it doesn't become too big */
+    max-height: 560px;        /* Limit height so it doesn't become too big */
 
     object-fit: contain;      /* 🔥 Ensures FULL image is visible (no crop) */
 
