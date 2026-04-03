@@ -1,115 +1,108 @@
-/* ===== GENERAL PAGE SETTINGS ===== */
+/* ===== GENERAL ===== */
 body {
-    margin: 0; /* Remove default browser margin */
-    font-family: Arial, sans-serif; /* Set clean font */
+    margin: 0; /* Remove default margin */
+    font-family: Arial, sans-serif; /* Clean font */
 }
 
-/* ===== SIDEBAR DESIGN ===== */
+/* ===== SIDEBAR ===== */
 .sidebar {
-    position: fixed;          /* Fix sidebar to left side */
-    width: 460px;             /* 🔥 MAIN CONTROL: increase/decrease sidebar width here */
-    height: 100%;             /* Full height of screen */
-    background: #1e1e2f;      /* Dark background */
-    color: white;             /* Text color */
-    padding: 20px;            /* Inner spacing */
-    overflow-y: auto;         /* Enable scroll if content is long */
+    position: fixed;      
+    width: 420px;   /* 🔥 REDUCED width (previously too large) */
+    height: 100%;
+    background: #1e1e2f;
+    color: white;
+    padding: 20px;
+    overflow-y: auto;
 }
 
-/* ===== PROFILE IMAGE (NO CROPPING FIX) ===== */
+/* ===== PROFILE IMAGE ===== */
 .profile-img {
-    width: 100%;              /* Take full sidebar width */
+    width: 98%;        /* 🔥 98% width (slight margin from edges) */
+    height: auto;      /* Keep original ratio (NO CUTTING) */
 
-    height: auto;             /* 🔥 IMPORTANT: keeps original ratio (NO CUTTING) */
+    transform: scale(0.98);  
+    /*
+    🔥 This makes image appear ~98% of original size
+    (both width & height slightly reduced)
+    */
 
-    max-height: 560px;        /* Limit height so it doesn't become too big */
-
-    object-fit: contain;      /* 🔥 Ensures FULL image is visible (no crop) */
-
-    border-radius: 5px;       /* Slight rounded corner */
-}
-
-/*
-IMPORTANT:
-- If image looks too tall → reduce max-height (e.g., 300px)
-- If image looks small → increase max-height (e.g., 500px)
-*/
-
-/* ===== NAME ===== */
-.sidebar h2 {
-    margin-top: 15px;         /* Space above name */
-    font-size: 26px;          /* Bigger name text */
-}
-
-/* ===== ROLE (Researcher) ===== */
-.role {
-    color: lightgray;         /* Slight faded color */
-    margin-bottom: 15px;      /* Space below */
-    font-size: 18px;          /* Medium size */
-}
-
-/* ===== BASIC TEXT (location, email) ===== */
-.sidebar p {
-    font-size: 16px;          /* Readable size */
-    margin: 6px 0;            /* Small vertical spacing */
-}
-
-/* ===== LINKS (Scholar, CV, GitHub) ===== */
-.sidebar a {
-    display: block;           /* Each link on new line */
-    color: white;             /* Text color */
-    margin: 8px 0;            /* Spacing between links */
-    text-decoration: none;    /* Remove underline */
-    font-size: 16px;
-}
-
-/* ===== WHITE BOX (Skills & Languages) ===== */
-.box {
-    background: white;        /* White background */
-    color: black;             /* Black text */
-    padding: 15px;            /* Inner spacing */
-    margin-top: 20px;         /* Space above box */
-    border-radius: 10px;      /* Rounded edges */
-}
-
-/* ===== SKILL BAR BACKGROUND ===== */
-.skill-bar {
-    width: 100%;              /* Full width */
-    background: #ddd;         /* Light gray background */
-    border-radius: 5px;       /* Rounded edges */
-    margin-bottom: 12px;      /* Space between bars */
-}
-
-/* ===== SKILL PROGRESS BAR ===== */
-.skill {
-    height: 20px;             /* Bar thickness */
-    color: white;             /* Text color */
-    text-align: right;        /* Percentage to right */
-    padding-right: 8px;       /* Space before text */
-    font-size: 13px;          /* Small text */
+    display: block;
+    margin: 0 auto;    /* Center image */
     border-radius: 5px;
 }
 
-/* ===== SKILL LEVELS (EDIT WIDTH TO CHANGE %) ===== */
-.python { width: 90%; background: #4CAF50; }   /* Python = 90% */
-.cpp { width: 80%; background: #2196F3; }      /* C/C++ = 80% */
-.matlab { width: 85%; background: #f39c12; }   /* MATLAB = 85% */
-.yolo { width: 95%; background: #e74c3c; }     /* YOLO = 95% */
-.opencv { width: 85%; background: #9b59b6; }   /* OpenCV = 85% */
+/* ===== NAME ===== */
+.sidebar h2 {
+    margin-top: 15px;
+    font-size: 24px;
+}
+
+/* ===== ROLE ===== */
+.role {
+    color: lightgray;
+    margin-bottom: 12px;
+    font-size: 16px;
+}
+
+/* ===== TEXT ===== */
+.sidebar p {
+    font-size: 15px;
+    margin: 6px 0;
+}
+
+/* ===== LINKS ===== */
+.sidebar a {
+    display: block;
+    color: white;
+    margin: 8px 0;
+    text-decoration: none;
+}
+
+/* ===== WHITE BOX ===== */
+.box {
+    background: white;
+    color: black;
+    padding: 12px;
+    margin-top: 15px;
+    border-radius: 8px;
+}
+
+/* ===== SKILL BAR ===== */
+.skill-bar {
+    width: 100%;
+    background: #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* ===== SKILL PROGRESS ===== */
+.skill {
+    height: 18px;
+    color: white;
+    text-align: right;
+    padding-right: 5px;
+    font-size: 12px;
+    border-radius: 5px;
+}
+
+/* ===== SKILL LEVELS ===== */
+.python { width: 90%; background: #4CAF50; }
+.cpp { width: 80%; background: #2196F3; }
+.matlab { width: 85%; background: #f39c12; }
+.yolo { width: 95%; background: #e74c3c; }
+.opencv { width: 85%; background: #9b59b6; }
 
 /* ===== LANGUAGE LEVELS ===== */
 .eng { width: 90%; background: #4CAF50; }
 .ban { width: 100%; background: #2ecc71; }
 .malay { width: 50%; background: #f39c12; }
 
-/* ===== MAIN CONTENT AREA ===== */
+/* ===== MAIN CONTENT ===== */
 .main {
-    margin-left: 700px;  
+    margin-left: 460px;  
     /*
-    🔥 VERY IMPORTANT:
-    This must be slightly bigger than sidebar width.
-
-    If sidebar = 650px → use 700px
-    If you increase sidebar → also increase this value
+    🔥 MUST match sidebar width + gap
+    Sidebar = 420px → use ~460px
     */
 
     padding: 20px;
