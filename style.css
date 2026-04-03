@@ -1,95 +1,105 @@
 /* ===== GENERAL PAGE SETTINGS ===== */
 body {
     margin: 0; /* Remove default browser margin */
-    font-family: Arial, sans-serif; /* Clean font */
+    font-family: Arial, sans-serif; /* Clean readable font */
 }
 
 /* ===== SIDEBAR DESIGN ===== */
 .sidebar {
-    position: fixed;          
-    width: 390px;  /* 🔥 Reduced by 30px (previously 420px) */
-    height: 100%;             
-    background: #1e1e2f;      
-    color: white;             
-    padding: 20px;            
-    overflow-y: auto;         
+    position: fixed;          /* Fix sidebar on the left side */
+    
+    width: 300px;             /* 🔥 EXACTLY same as image width (no extra space) */
+
+    height: 100vh;            /* Full screen height */
+
+    background: #1e1e2f;      /* Dark background */
+
+    color: white;             /* Text color */
+
+    padding: 0;               /* 🔥 IMPORTANT: remove padding → no gap around image */
+
+    overflow-y: auto;         /* 🔥 Scroll only vertically if content is long */
+
+    overflow-x: hidden;       /* 🔥 Prevent horizontal scrollbar */
 }
 
-/* ===== PROFILE IMAGE (PRECISE CROPPING CONTROL) ===== */
+/* ===== PROFILE IMAGE ===== */
 .profile-img {
-    width: 100%;              /* Full width of sidebar */
+    width: 300px;             /* 🔥 Fixed width (same as sidebar) */
 
-    height: 497px;            
-    /*
-    Original image height = 567px
-    Remove 20px (top) + 50px (bottom) = 70px
-    → 567 - 70 = 497px
-    */
+    height: 360px;            /* 🔥 LIMIT height to 360px (as you requested) */
 
-    object-fit: cover;        
+    object-fit: cover;        /* Fill area nicely (crop if needed) */
 
-    object-position: center -20px;  
-    /*
-    Move image UP by 20px:
-    → Cuts 20px from TOP
-    → Remaining cut happens at bottom (~50px)
-    */
+    display: block;           /* Remove small inline spacing issues */
+}
 
-    border-radius: 5px;
+/*
+IMPORTANT:
+- width = sidebar width → no left/right gap
+- height = 360px → controlled size
+- object-fit: cover → fills nicely (professional look)
+*/
+
+/* ===== CONTENT WRAPPER INSIDE SIDEBAR ===== */
+/* This adds padding ONLY to text, NOT image */
+.sidebar-content {
+    padding: 15px;            /* Space for text below image */
 }
 
 /* ===== NAME ===== */
 .sidebar h2 {
-    margin-top: 15px;
-    font-size: 24px;
+    margin-top: 10px;         /* Small space below image */
+    font-size: 22px;          /* Name size */
 }
 
 /* ===== ROLE TEXT ===== */
 .role {
-    color: lightgray;
-    margin-bottom: 12px;
-    font-size: 16px;
+    color: lightgray;         /* Slight faded color */
+    margin-bottom: 10px;      /* Space below */
+    font-size: 15px;
 }
 
 /* ===== BASIC TEXT (location, email) ===== */
 .sidebar p {
-    font-size: 15px;
-    margin: 6px 0;
+    font-size: 14px;
+    margin: 5px 0;
 }
 
 /* ===== LINKS (Scholar, CV, GitHub) ===== */
 .sidebar a {
-    display: block;
+    display: block;           /* Each link in new line */
     color: white;
-    margin: 8px 0;
+    margin: 6px 0;
     text-decoration: none;
+    font-size: 14px;
 }
 
 /* ===== WHITE BOX (Skills & Languages) ===== */
 .box {
     background: white;
     color: black;
-    padding: 12px;
+    padding: 10px;
     margin-top: 15px;
-    border-radius: 8px;
+    border-radius: 6px;
 }
 
 /* ===== SKILL BAR BACKGROUND ===== */
 .skill-bar {
     width: 100%;
     background: #ddd;
-    border-radius: 5px;
-    margin-bottom: 10px;
+    border-radius: 4px;
+    margin-bottom: 8px;
 }
 
-/* ===== SKILL PROGRESS ===== */
+/* ===== SKILL PROGRESS BAR ===== */
 .skill {
-    height: 18px;
+    height: 16px;
     color: white;
     text-align: right;
     padding-right: 5px;
-    font-size: 12px;
-    border-radius: 5px;
+    font-size: 11px;
+    border-radius: 4px;
 }
 
 /* ===== SKILL LEVELS ===== */
@@ -106,10 +116,10 @@ body {
 
 /* ===== MAIN CONTENT AREA ===== */
 .main {
-    margin-left: 430px;  
+    margin-left: 320px;  
     /*
-    Sidebar width = 390px
-    + spacing ≈ 40px
+    Sidebar = 300px
+    + small gap (20px)
     */
 
     padding: 20px;
