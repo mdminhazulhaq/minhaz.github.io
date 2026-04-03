@@ -1,34 +1,51 @@
 body {
     margin: 0;
-    font-family: Arial;
+    font-family: Arial, sans-serif;
 }
 
-/* Sidebar */
+/* ===== SIDEBAR ===== */
 .sidebar {
     position: fixed;
-    width: 250px;
+    width: 260px;
     height: 100%;
     background: #1e1e2f;
     color: white;
-    text-align: center;
     padding: 20px;
+    text-align: center;
 }
 
-.profile {
-    width: 120px;
-    border-radius: 50%;
+/* Square profile image */
+.profile-square {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
 }
 
+/* Role */
+.role {
+    color: lightgray;
+}
+
+/* Links */
 .sidebar a {
     display: block;
     color: white;
-    margin: 10px 0;
+    margin: 8px 0;
     text-decoration: none;
 }
 
-/* Main content */
+/* White boxes */
+.box {
+    background: white;
+    color: black;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 8px;
+}
+
+/* ===== MAIN CONTENT ===== */
 .main {
-    margin-left: 270px;
+    margin-left: 300px;
     padding: 20px;
 }
 
@@ -46,8 +63,9 @@ body {
 }
 
 /* Sections */
-section {
-    margin: 40px 0;
+.content-section {
+    display: none;
+    margin-top: 30px;
 }
 
 /* Project cards */
