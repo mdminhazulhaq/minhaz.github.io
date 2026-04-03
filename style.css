@@ -2,31 +2,18 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0; /* 🔥 Light background like your friend */
+    background-color: #f5f7fa;
+
+    padding-left: 80px;  /* 🔥 LEFT SPACE (like your friend's page) */
 }
 
 /* ===== SIDEBAR DESIGN ===== */
 .sidebar {
     position: fixed;
 
-    left: 20px;  
-    /*
-    🔥 THIS LINE CREATES SPACE ON LEFT
-    Increase/decrease this value:
-    10px = small gap
-    20px = medium gap (recommended)
-    30px = larger gap
-    */
-
     width: 340px;
-    height: calc(100vh - 40px); 
-    /*
-    🔥 Reduce height slightly so top & bottom also have spacing
-    */
 
-    top: 20px;  /* 🔥 space from top */
-    bottom: 20px; /* 🔥 space from bottom */
-
+    height: 100vh;
     background: #1e1e2f;
     color: white;
 
@@ -34,11 +21,6 @@ body {
 
     overflow-y: auto;
     overflow-x: hidden;
-
-    border-radius: 8px;  
-    /*
-    🔥 Rounded edges like your friend (optional but looks better)
-    */
 }
 
 /* ===== PROFILE IMAGE ===== */
@@ -111,25 +93,87 @@ body {
     border-radius: 4px;
 }
 
-/* ===== SKILLS ===== */
+/* ===== SKILL LEVELS ===== */
 .python { width: 90%; background: #4CAF50; }
 .cpp { width: 80%; background: #2196F3; }
 .matlab { width: 85%; background: #f39c12; }
 .yolo { width: 95%; background: #e74c3c; }
 .opencv { width: 85%; background: #9b59b6; }
 
-/* ===== LANGUAGES ===== */
+/* ===== LANGUAGE LEVELS ===== */
 .eng { width: 90%; background: #4CAF50; }
 .ban { width: 100%; background: #2ecc71; }
 .malay { width: 50%; background: #f39c12; }
 
 /* ===== MAIN CONTENT ===== */
 .main {
-    margin-left: 400px;  
+    margin-left: 500px;
     /*
-    🔥 Adjusted because sidebar moved right
-    Sidebar (340px) + left gap (20px) + spacing
+    🔥 Calculation:
+    80px (left space)
+    + 340px (sidebar)
+    + 80px (gap to right)
+    = 500px
     */
 
     padding: 25px;
+}
+
+/* ===== TOP MENU ===== */
+.top-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+/* ===== BUTTON ===== */
+.top-menu button {
+    background-color: #1e1e2f;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.top-menu button:hover {
+    background-color: #34344a;
+}
+
+/* ===== SECTION ===== */
+.content-section {
+    display: none;
+}
+
+.content-section h1 {
+    margin-top: 0;
+    color: #1e1e2f;
+    font-size: 30px;
+}
+
+.content-section p,
+.content-section li {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #333;
+}
+
+/* ===== CARD ===== */
+.section-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.section-card h3 {
+    margin-top: 0;
+    color: #1e1e2f;
+}
+
+.section-card ul {
+    padding-left: 20px;
 }
