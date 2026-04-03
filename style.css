@@ -1,102 +1,116 @@
-/* ===== GENERAL ===== */
+/* ===== GENERAL PAGE SETTINGS ===== */
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
+    margin: 0; /* Remove default browser margin */
+    font-family: Arial, sans-serif; /* Set clean font */
 }
 
-/* ===== SIDEBAR (DOUBLED WIDTH) ===== */
+/* ===== SIDEBAR DESIGN ===== */
 .sidebar {
-    position: fixed;
-    width: 560px;  /* 🔥 Increased from ~280px → DOUBLE */
-    height: 100%;
-    background: #1e1e2f;
-    color: white;
-    padding: 20px;
-    overflow-y: auto;
+    position: fixed;          /* Fix sidebar to left side */
+    width: 650px;             /* 🔥 MAIN CONTROL: increase/decrease sidebar width here */
+    height: 100%;             /* Full height of screen */
+    background: #1e1e2f;      /* Dark background */
+    color: white;             /* Text color */
+    padding: 20px;            /* Inner spacing */
+    overflow-y: auto;         /* Enable scroll if content is long */
 }
 
-/* ===== PROFILE IMAGE (INCREASED SIZE) ===== */
-/*
-- Bigger width (fits new sidebar)
-- Slightly taller but still clean
-*/
+/* ===== PROFILE IMAGE (NO CROPPING FIX) ===== */
 .profile-img {
-    width: 100%;
-    height: 260px;   /* 🔥 Increased from 180px */
-    object-fit: cover;
-    border-radius: 5px;
+    width: 100%;              /* Take full sidebar width */
+
+    height: auto;             /* 🔥 IMPORTANT: keeps original ratio (NO CUTTING) */
+
+    max-height: 400px;        /* Limit height so it doesn't become too big */
+
+    object-fit: contain;      /* 🔥 Ensures FULL image is visible (no crop) */
+
+    border-radius: 5px;       /* Slight rounded corner */
 }
+
+/*
+IMPORTANT:
+- If image looks too tall → reduce max-height (e.g., 300px)
+- If image looks small → increase max-height (e.g., 500px)
+*/
 
 /* ===== NAME ===== */
 .sidebar h2 {
-    margin-top: 15px;
+    margin-top: 15px;         /* Space above name */
+    font-size: 26px;          /* Bigger name text */
 }
 
-/* ===== ROLE ===== */
+/* ===== ROLE (Researcher) ===== */
 .role {
-    color: lightgray;
-    margin-bottom: 15px;
-    font-size: 18px;
+    color: lightgray;         /* Slight faded color */
+    margin-bottom: 15px;      /* Space below */
+    font-size: 18px;          /* Medium size */
 }
 
-/* ===== TEXT (LOCATION, EMAIL) ===== */
+/* ===== BASIC TEXT (location, email) ===== */
 .sidebar p {
-    font-size: 16px;
+    font-size: 16px;          /* Readable size */
+    margin: 6px 0;            /* Small vertical spacing */
 }
 
-/* ===== LINKS ===== */
+/* ===== LINKS (Scholar, CV, GitHub) ===== */
 .sidebar a {
-    display: block;
-    color: white;
-    margin: 8px 0;
-    text-decoration: none;
+    display: block;           /* Each link on new line */
+    color: white;             /* Text color */
+    margin: 8px 0;            /* Spacing between links */
+    text-decoration: none;    /* Remove underline */
     font-size: 16px;
 }
 
 /* ===== WHITE BOX (Skills & Languages) ===== */
 .box {
-    background: white;
-    color: black;
-    padding: 15px;
-    margin-top: 20px;
-    border-radius: 10px;
+    background: white;        /* White background */
+    color: black;             /* Black text */
+    padding: 15px;            /* Inner spacing */
+    margin-top: 20px;         /* Space above box */
+    border-radius: 10px;      /* Rounded edges */
 }
 
 /* ===== SKILL BAR BACKGROUND ===== */
 .skill-bar {
-    width: 100%;
-    background: #ddd;
-    border-radius: 5px;
-    margin-bottom: 12px;
+    width: 100%;              /* Full width */
+    background: #ddd;         /* Light gray background */
+    border-radius: 5px;       /* Rounded edges */
+    margin-bottom: 12px;      /* Space between bars */
 }
 
-/* ===== SKILL PROGRESS ===== */
+/* ===== SKILL PROGRESS BAR ===== */
 .skill {
-    height: 20px;
-    color: white;
-    text-align: right;
-    padding-right: 8px;
-    font-size: 13px;
+    height: 20px;             /* Bar thickness */
+    color: white;             /* Text color */
+    text-align: right;        /* Percentage to right */
+    padding-right: 8px;       /* Space before text */
+    font-size: 13px;          /* Small text */
     border-radius: 5px;
 }
 
-/* ===== SKILL COLORS ===== */
-.python { width: 90%; background: #4CAF50; }
-.cpp { width: 80%; background: #2196F3; }
-.matlab { width: 85%; background: #f39c12; }
-.yolo { width: 95%; background: #e74c3c; }
-.opencv { width: 85%; background: #9b59b6; }
+/* ===== SKILL LEVELS (EDIT WIDTH TO CHANGE %) ===== */
+.python { width: 90%; background: #4CAF50; }   /* Python = 90% */
+.cpp { width: 80%; background: #2196F3; }      /* C/C++ = 80% */
+.matlab { width: 85%; background: #f39c12; }   /* MATLAB = 85% */
+.yolo { width: 95%; background: #e74c3c; }     /* YOLO = 95% */
+.opencv { width: 85%; background: #9b59b6; }   /* OpenCV = 85% */
 
-/* ===== LANGUAGE COLORS ===== */
+/* ===== LANGUAGE LEVELS ===== */
 .eng { width: 90%; background: #4CAF50; }
 .ban { width: 100%; background: #2ecc71; }
 .malay { width: 50%; background: #f39c12; }
 
-/* ===== MAIN CONTENT (IMPORTANT FIX) ===== */
-/*
-- Must match sidebar width + small gap
-*/
+/* ===== MAIN CONTENT AREA ===== */
 .main {
-    margin-left: 600px;  /* 🔥 Increased accordingly */
+    margin-left: 700px;  
+    /*
+    🔥 VERY IMPORTANT:
+    This must be slightly bigger than sidebar width.
+
+    If sidebar = 650px → use 700px
+    If you increase sidebar → also increase this value
+    */
+
     padding: 20px;
 }
