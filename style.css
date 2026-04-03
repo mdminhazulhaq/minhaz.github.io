@@ -18,7 +18,7 @@ body {
 /* ===== LARGE PROFILE IMAGE ===== */
 .profile-large {
     width: 100%;       /* FULL WIDTH */
-    height: 300px;     /* BIG HEIGHT */
+    height: 200px;     /* BIG HEIGHT */
     object-fit: cover; /* KEEP PROPORTION */
     border-radius: 5px;
 }
