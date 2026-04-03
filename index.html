@@ -2,7 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+
+    <!-- ===== PAGE TITLE (Shown in browser tab) ===== -->
     <title>Md. Minhazul Haq</title>
+
+    <!-- ===== LINK CSS FILE ===== -->
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -12,95 +16,105 @@
 <div class="sidebar">
 
     <!-- ===== PROFILE IMAGE ===== -->
-    <!-- You can change image file name here -->
-    <!-- This image is resized using CSS (controlled height, not too big) -->
+    <!-- IMPORTANT:
+         - Image takes FULL sidebar width (no gap)
+         - Height controlled in CSS (360px)
+         - Replace "profile.jpg" with your image file -->
     <img src="profile.jpg" class="profile-img">
 
-    <!-- ===== NAME ===== -->
-    <!-- Change your name here -->
-    <h2>Md. Minhazul Haq</h2>
 
-    <!-- ===== ROLE / TITLE ===== -->
-    <!-- You can change to: PhD Applicant / AI Researcher etc -->
-    <p class="role">Researcher</p>
+    <!-- ===== SIDEBAR CONTENT (TEXT AREA) ===== -->
+    <!-- This wrapper adds padding ONLY to text, NOT image -->
+    <div class="sidebar-content">
 
-    <!-- ===== BASIC INFO ===== -->
-    <!-- Update location -->
-    <p>📍 Kuala Lumpur, Malaysia</p>
+        <!-- ===== NAME ===== -->
+        <h2>Md. Minhazul Haq</h2>
 
-    <!-- Update email -->
-    <p>📧 minhaz.um.masters@gmail.com</p>
+        <!-- ===== ROLE / TITLE ===== -->
+        <p class="role">Researcher</p>
 
-    <!-- ===== LINKS ===== -->
-    <!-- Replace # with your real links -->
+        <!-- ===== BASIC INFO ===== -->
+        <p>📍 Kuala Lumpur, Malaysia</p>
+        <p>📧 minhaz.um.masters@gmail.com</p>
 
-    <!-- Google Scholar -->
-    <a href="#" target="_blank">🎓 Google Scholar</a>
+        <!-- ===== LINKS ===== -->
+        <!-- Replace # with real links -->
 
-    <!-- CV (make sure PDF name matches your uploaded file) -->
-    <a href="Minhazul_Haq_CV.pdf" target="_blank">📄 CV</a>
+        <!-- Google Scholar -->
+        <a href="#" target="_blank">🎓 Google Scholar</a>
 
-    <!-- GitHub -->
-    <a href="#" target="_blank">💻 GitHub</a>
+        <!-- CV (Make sure filename matches uploaded file) -->
+        <a href="Minhazul_Haq_CV.pdf" target="_blank">📄 CV</a>
 
-    <!-- ===== SKILLS SECTION ===== -->
-    <div class="box">
-        <h3>Skills</h3>
+        <!-- GitHub -->
+        <a href="#" target="_blank">💻 GitHub</a>
 
-        <!-- Each skill has: name + progress bar -->
+        <!-- ===== SKILLS SECTION ===== -->
+        <div class="box">
+            <h3>Skills</h3>
 
-        <p>Python</p>
-        <div class="skill-bar">
-            <div class="skill python">90%</div>
+            <!-- Each skill has name + progress bar -->
+
+            <p>Python</p>
+            <div class="skill-bar">
+                <div class="skill python">90%</div>
+            </div>
+
+            <p>C/C++</p>
+            <div class="skill-bar">
+                <div class="skill cpp">80%</div>
+            </div>
+
+            <p>MATLAB</p>
+            <div class="skill-bar">
+                <div class="skill matlab">85%</div>
+            </div>
+
+            <p>YOLO</p>
+            <div class="skill-bar">
+                <div class="skill yolo">95%</div>
+            </div>
+
+            <p>OpenCV</p>
+            <div class="skill-bar">
+                <div class="skill opencv">85%</div>
+            </div>
         </div>
 
-        <p>C/C++</p>
-        <div class="skill-bar">
-            <div class="skill cpp">80%</div>
+        <!-- ===== LANGUAGES SECTION ===== -->
+        <div class="box">
+            <h3>Languages</h3>
+
+            <p>English</p>
+            <div class="skill-bar">
+                <div class="skill eng">90%</div>
+            </div>
+
+            <p>Bangla</p>
+            <div class="skill-bar">
+                <div class="skill ban">100%</div>
+            </div>
+
+            <p>Malay</p>
+            <div class="skill-bar">
+                <div class="skill malay">50%</div>
+            </div>
         </div>
 
-        <p>MATLAB</p>
-        <div class="skill-bar">
-            <div class="skill matlab">85%</div>
-        </div>
-
-        <p>YOLO</p>
-        <div class="skill-bar">
-            <div class="skill yolo">95%</div>
-        </div>
-
-        <p>OpenCV</p>
-        <div class="skill-bar">
-            <div class="skill opencv">85%</div>
-        </div>
-    </div>
-
-    <!-- ===== LANGUAGES SECTION ===== -->
-    <div class="box">
-        <h3>Languages</h3>
-
-        <p>English</p>
-        <div class="skill-bar">
-            <div class="skill eng">90%</div>
-        </div>
-
-        <p>Bangla</p>
-        <div class="skill-bar">
-            <div class="skill ban">100%</div>
-        </div>
-
-        <p>Malay</p>
-        <div class="skill-bar">
-            <div class="skill malay">50%</div>
-        </div>
-    </div>
+    </div> <!-- END sidebar-content -->
 
 </div>
 <!-- ================= SIDEBAR END ================= -->
 
+
+<!-- ================= MAIN CONTENT ================= -->
 <div class="main">
+
+    <!-- Temporary text (we will design sections next) -->
     <h1>Sidebar Updated ✅</h1>
+
 </div>
+
 
 </body>
 </html>
