@@ -6,76 +6,58 @@ body {
 
 /* ===== SIDEBAR DESIGN ===== */
 .sidebar {
-    position: fixed;          /* Fix sidebar on the left side */
-    
-    width: 300px;             /* 🔥 EXACTLY same as image width (no extra space) */
-
-    height: 100vh;            /* Full screen height */
-
-    background: #1e1e2f;      /* Dark background */
-
-    color: white;             /* Text color */
-
-    padding: 0;               /* 🔥 IMPORTANT: remove padding → no gap around image */
-
-    overflow-y: auto;         /* 🔥 Scroll only vertically if content is long */
-
-    overflow-x: hidden;       /* 🔥 Prevent horizontal scrollbar */
+    position: fixed;          
+    width: 340px;  /* 🔥 UPDATED: 300px → 340px (+40px) */
+    height: 100vh;            
+    background: #1e1e2f;      
+    color: white;             
+    padding: 0;               /* No gap around image */
+    overflow-y: auto;         
+    overflow-x: hidden;       
 }
 
 /* ===== PROFILE IMAGE ===== */
 .profile-img {
-    width: 300px;             /* 🔥 Fixed width (same as sidebar) */
-
-    height: 360px;            /* 🔥 LIMIT height to 360px (as you requested) */
-
-    object-fit: cover;        /* Fill area nicely (crop if needed) */
-
-    display: block;           /* Remove small inline spacing issues */
+    width: 340px;   /* 🔥 MUST match sidebar width */
+    height: 360px;  
+    object-fit: cover;
+    display: block;
 }
 
-/*
-IMPORTANT:
-- width = sidebar width → no left/right gap
-- height = 360px → controlled size
-- object-fit: cover → fills nicely (professional look)
-*/
-
-/* ===== CONTENT WRAPPER INSIDE SIDEBAR ===== */
-/* This adds padding ONLY to text, NOT image */
+/* ===== SIDEBAR CONTENT (TEXT AREA) ===== */
 .sidebar-content {
-    padding: 15px;            /* Space for text below image */
+    padding: 15px;
 }
 
 /* ===== NAME ===== */
 .sidebar h2 {
-    margin-top: 10px;         /* Small space below image */
-    font-size: 22px;          /* Name size */
+    margin-top: 10px;
+    font-size: 22px;
 }
 
 /* ===== ROLE TEXT ===== */
 .role {
-    color: lightgray;         /* Slight faded color */
-    margin-bottom: 10px;      /* Space below */
+    color: lightgray;
+    margin-bottom: 10px;
     font-size: 15px;
 }
 
-/* ===== BASIC TEXT (location, email) ===== */
+/* ===== BASIC TEXT ===== */
 .sidebar p {
     font-size: 14px;
     margin: 5px 0;
 }
 
-/* ===== LINKS (Scholar, CV, GitHub) ===== */
+/* ===== LINKS ===== */
 .sidebar a {
-    display: block;           /* Each link in new line */
+    display: block;
     color: white;
     margin: 6px 0;
     text-decoration: none;
     font-size: 14px;
 }
 
-/* ===== WHITE BOX (Skills & Languages) ===== */
+/* ===== WHITE BOX ===== */
 .box {
     background: white;
     color: black;
@@ -84,7 +66,7 @@ IMPORTANT:
     border-radius: 6px;
 }
 
-/* ===== SKILL BAR BACKGROUND ===== */
+/* ===== SKILL BAR ===== */
 .skill-bar {
     width: 100%;
     background: #ddd;
@@ -92,7 +74,7 @@ IMPORTANT:
     margin-bottom: 8px;
 }
 
-/* ===== SKILL PROGRESS BAR ===== */
+/* ===== SKILL PROGRESS ===== */
 .skill {
     height: 16px;
     color: white;
@@ -116,11 +98,6 @@ IMPORTANT:
 
 /* ===== MAIN CONTENT AREA ===== */
 .main {
-    margin-left: 320px;  
-    /*
-    Sidebar = 300px
-    + small gap (20px)
-    */
-
+    margin-left: 360px;  /* 🔥 UPDATED: sidebar (340px) + small gap */
     padding: 20px;
 }
