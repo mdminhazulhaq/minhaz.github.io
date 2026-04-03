@@ -28,6 +28,7 @@
         <p>Python</p>
         <p>C/C++</p>
         <p>MATLAB</p>
+        <p>YOLO, CNN, RNN</p>
     </div>
 
     <div class="box">
@@ -39,17 +40,30 @@
 
 </div>
 
+<!-- ===== MAIN CONTENT ===== -->
+<div class="main">
+
+    <!-- NAVBAR -->
+    <div class="navbar">
+        <a href="#" onclick="showSection('overview')">Overview</a>
+        <a href="#" onclick="showSection('research')">Research</a>
+        <a href="#" onclick="showSection('projects')">Projects</a>
+        <a href="#" onclick="showSection('teaching')">Teaching</a>
+        <a href="#" onclick="showSection('awards')">Awards</a>
+        <a href="#" onclick="showSection('contact')">Contact</a>
+    </div>
+
     <!-- OVERVIEW -->
-    <section id="overview">
+    <section id="overview" class="content-section">
         <h1>Overview</h1>
         <p>
-        I am a Graduate Research Assistant at Universiti Malaya working on lightweight deep learning models for real-time object detection on embedded systems.
+        I am a Graduate Research Assistant at Universiti Malaya working on lightweight deep learning models for real-time object detection on embedded systems. 
         My research focuses on YOLO optimization, Edge AI, and efficient computer vision systems.
         </p>
     </section>
 
     <!-- RESEARCH -->
-    <section id="research">
+    <section id="research" class="content-section">
         <h1>Research</h1>
         <ul>
             <li>Edge AI and Embedded Vision</li>
@@ -60,29 +74,29 @@
     </section>
 
     <!-- PROJECTS -->
-    <section id="projects">
+    <section id="projects" class="content-section">
         <h1>Projects</h1>
 
         <div class="card">
             <h3>HAT-YOLO</h3>
-            <p>Hybrid Attention + Transformer model for UAV detection.</p>
+            <p>Hybrid Attention and Transformer-based model for UAV object detection.</p>
         </div>
 
         <div class="card">
             <h3>EdgeLite-YOLOv8n</h3>
-            <p>Optimized YOLO model for embedded devices.</p>
+            <p>Optimized lightweight YOLO model for real-time detection on embedded devices.</p>
         </div>
 
     </section>
 
     <!-- TEACHING -->
-    <section id="teaching">
+    <section id="teaching" class="content-section">
         <h1>Teaching</h1>
         <p>Lab Instructor, Universiti Malaya (Electrical & Electromagnetic Experiments)</p>
     </section>
 
     <!-- AWARDS -->
-    <section id="awards">
+    <section id="awards" class="content-section">
         <h1>Awards</h1>
         <ul>
             <li>Best Presenter – IOPS4 2025</li>
@@ -91,13 +105,29 @@
     </section>
 
     <!-- CONTACT -->
-    <section id="contact">
+    <section id="contact" class="content-section">
         <h1>Contact</h1>
         <p>Email: minhaz.um.masters@gmail.com</p>
         <p>Location: Kuala Lumpur, Malaysia</p>
     </section>
 
 </div>
+
+<!-- ===== SCRIPT ===== -->
+<script>
+function showSection(id) {
+    let sections = document.querySelectorAll('.content-section');
+    sections.forEach(section => {
+        section.style.display = 'none';
+    });
+
+    document.getElementById(id).style.display = 'block';
+}
+
+window.onload = function() {
+    showSection('overview');
+}
+</script>
 
 </body>
 </html>
