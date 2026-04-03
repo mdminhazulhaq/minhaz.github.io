@@ -1,1 +1,59 @@
+body {
+    margin: 0;
+    font-family: Arial;
+}
 
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    background: #1e1e2f;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.profile {
+    width: 120px;
+    border-radius: 50%;
+}
+
+.sidebar a {
+    display: block;
+    color: white;
+    margin: 10px 0;
+    text-decoration: none;
+}
+
+/* Main content */
+.main {
+    margin-left: 270px;
+    padding: 20px;
+}
+
+/* Navbar */
+.navbar {
+    background: #2a9d8f;
+    padding: 10px;
+}
+
+.navbar a {
+    margin: 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Sections */
+section {
+    margin: 40px 0;
+}
+
+/* Project cards */
+.card {
+    background: #f2f2f2;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+}
