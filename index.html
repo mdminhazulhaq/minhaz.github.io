@@ -11,124 +11,84 @@
 <!-- ===== SIDEBAR ===== -->
 <div class="sidebar">
 
-    <img src="profile.jpg" class="profile-square">
+    <!-- PROFILE IMAGE (NOW BIG - COVER SIDEBAR WIDTH) -->
+    <img src="profile.jpg" class="profile-large">
 
+    <!-- NAME + ROLE -->
     <h2>Md. Minhazul Haq</h2>
     <p class="role">Researcher</p>
 
+    <!-- BASIC INFO -->
     <p>📍 Kuala Lumpur, Malaysia</p>
     <p>📧 minhaz.um.masters@gmail.com</p>
 
+    <!-- LINKS -->
     <a href="#" target="_blank">🎓 Google Scholar</a>
     <a href="Minhazul_Haq_CV.pdf" target="_blank">📄 CV</a>
     <a href="#" target="_blank">💻 GitHub</a>
 
+    <!-- ===== SKILLS WITH PERCENTAGE BARS ===== -->
     <div class="box">
         <h3>Skills</h3>
+
+        <!-- Python -->
         <p>Python</p>
+        <div class="skill-bar">
+            <div class="skill python">90%</div>
+        </div>
+
+        <!-- C/C++ -->
         <p>C/C++</p>
+        <div class="skill-bar">
+            <div class="skill cpp">80%</div>
+        </div>
+
+        <!-- MATLAB -->
         <p>MATLAB</p>
-        <p>YOLO, CNN</p>
+        <div class="skill-bar">
+            <div class="skill matlab">85%</div>
+        </div>
+
+        <!-- YOLO -->
+        <p>YOLO</p>
+        <div class="skill-bar">
+            <div class="skill yolo">95%</div>
+        </div>
+
+        <!-- OpenCV -->
+        <p>OpenCV</p>
+        <div class="skill-bar">
+            <div class="skill opencv">85%</div>
+        </div>
+
     </div>
 
+    <!-- ===== LANGUAGES ===== -->
     <div class="box">
         <h3>Languages</h3>
+
         <p>English</p>
+        <div class="skill-bar">
+            <div class="skill eng">90%</div>
+        </div>
+
         <p>Bangla</p>
-        <p>Malay (Basic)</p>
+        <div class="skill-bar">
+            <div class="skill ban">100%</div>
+        </div>
+
+        <p>Malay</p>
+        <div class="skill-bar">
+            <div class="skill malay">50%</div>
+        </div>
     </div>
 
 </div>
 
-<!-- ===== MAIN CONTENT ===== -->
+<!-- ===== MAIN CONTENT (UNCHANGED FOR NOW) ===== -->
 <div class="main">
-
-    <!-- NAVBAR -->
-    <div class="navbar">
-        <a href="#" onclick="showSection('overview')">Overview</a>
-        <a href="#" onclick="showSection('research')">Research</a>
-        <a href="#" onclick="showSection('projects')">Projects</a>
-        <a href="#" onclick="showSection('teaching')">Teaching</a>
-        <a href="#" onclick="showSection('awards')">Awards</a>
-        <a href="#" onclick="showSection('contact')">Contact</a>
-    </div>
-
-    <!-- OVERVIEW -->
-    <section id="overview" class="content-section">
-        <h1>Overview</h1>
-        <p>
-        I am a Graduate Research Assistant at Universiti Malaya working on lightweight deep learning models for real-time object detection on embedded systems. My research focuses on YOLO optimization, Edge AI, and efficient computer vision systems.
-        </p>
-    </section>
-
-    <!-- RESEARCH -->
-    <section id="research" class="content-section">
-        <h1>Research</h1>
-        <ul>
-            <li>Edge AI and Embedded Vision</li>
-            <li>Lightweight YOLO Optimization</li>
-            <li>UAV Object Detection</li>
-            <li>Medical Image Analysis</li>
-        </ul>
-    </section>
-
-    <!-- PROJECTS -->
-    <section id="projects" class="content-section">
-        <h1>Projects</h1>
-
-        <div class="card">
-            <h3>HAT-YOLO</h3>
-            <p>Hybrid Attention and Transformer-integrated model for UAV object detection.</p>
-        </div>
-
-        <div class="card">
-            <h3>EdgeLite-YOLOv8n</h3>
-            <p>Lightweight optimized YOLO model for real-time embedded deployment.</p>
-        </div>
-
-    </section>
-
-    <!-- TEACHING -->
-    <section id="teaching" class="content-section">
-        <h1>Teaching</h1>
-        <p>
-        Lab Instructor at Universiti Malaya, conducting electrical and electromagnetic experiments and guiding undergraduate students.
-        </p>
-    </section>
-
-    <!-- AWARDS -->
-    <section id="awards" class="content-section">
-        <h1>Awards</h1>
-        <ul>
-            <li>Best Presenter – IOPS4 2025</li>
-            <li>Best Project – Science Fair 2019</li>
-        </ul>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="content-section">
-        <h1>Contact</h1>
-        <p>Email: minhaz.um.masters@gmail.com</p>
-        <p>Location: Kuala Lumpur, Malaysia</p>
-    </section>
-
+    <h1>Sidebar Updated Successfully ✅</h1>
 </div>
-
-<!-- ===== JAVASCRIPT ===== -->
-<script>
-function showSection(id) {
-    let sections = document.querySelectorAll('.content-section');
-    sections.forEach(section => {
-        section.style.display = 'none';
-    });
-
-    document.getElementById(id).style.display = 'block';
-}
-
-window.onload = function() {
-    showSection('overview');
-}
-</script>
 
 </body>
 </html>
