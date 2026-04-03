@@ -7,24 +7,33 @@ body {
 /* ===== SIDEBAR DESIGN ===== */
 .sidebar {
     position: fixed;          
-    width: 340px;  /* 🔥 UPDATED: 300px → 340px (+40px) */
+    width: 340px;  
     height: 100vh;            
     background: #1e1e2f;      
     color: white;             
-    padding: 0;               /* No gap around image */
+    padding: 0;               
     overflow-y: auto;         
     overflow-x: hidden;       
 }
 
-/* ===== PROFILE IMAGE ===== */
+/* ===== PROFILE IMAGE (FIXED TOP CUT ISSUE) ===== */
 .profile-img {
-    width: 340px;   /* 🔥 MUST match sidebar width */
-    height: 360px;  
-    object-fit: cover;
+    width: 100%;        /* 🔥 Always match sidebar width */
+    height: 360px;      /* Fixed height */
+
+    object-fit: cover;  
+
+    object-position: center top;  
+    /*
+    🔥 IMPORTANT FIX:
+    - Ensures TOP part of image is visible
+    - Cropping will happen from bottom instead
+    */
+
     display: block;
 }
 
-/* ===== SIDEBAR CONTENT (TEXT AREA) ===== */
+/* ===== SIDEBAR CONTENT ===== */
 .sidebar-content {
     padding: 15px;
 }
@@ -96,8 +105,8 @@ body {
 .ban { width: 100%; background: #2ecc71; }
 .malay { width: 50%; background: #f39c12; }
 
-/* ===== MAIN CONTENT AREA ===== */
+/* ===== MAIN CONTENT ===== */
 .main {
-    margin-left: 360px;  /* 🔥 UPDATED: sidebar (340px) + small gap */
+    margin-left: 360px;  
     padding: 20px;
 }
