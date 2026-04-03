@@ -1,40 +1,43 @@
+/* ===== GENERAL ===== */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
 }
 
-/* Sidebar */
+/* ===== SIDEBAR ===== */
 .sidebar {
     position: fixed;
-    width: 260px;
+    width: 280px;
     height: 100%;
     background: #1e1e2f;
     color: white;
-    text-align: center;
-    padding: 20px;
+    padding: 15px;
+    overflow-y: auto; /* scroll if content long */
 }
 
-/* Square image */
-.profile-square {
-    width: 140px;
-    height: 140px;
-    object-fit: cover;
+/* ===== LARGE PROFILE IMAGE ===== */
+.profile-large {
+    width: 100%;       /* FULL WIDTH */
+    height: 200px;     /* BIG HEIGHT */
+    object-fit: cover; /* KEEP PROPORTION */
+    border-radius: 5px;
 }
 
-/* Role text */
+/* ROLE TEXT */
 .role {
     color: lightgray;
+    margin-bottom: 10px;
 }
 
-/* Sidebar links */
+/* LINKS */
 .sidebar a {
     display: block;
     color: white;
-    margin: 8px 0;
+    margin: 6px 0;
     text-decoration: none;
 }
 
-/* White boxes */
+/* ===== WHITE BOX (Skills, Languages) ===== */
 .box {
     background: white;
     color: black;
@@ -43,36 +46,38 @@ body {
     border-radius: 8px;
 }
 
-/* Main content */
+/* ===== SKILL BAR BACKGROUND ===== */
+.skill-bar {
+    width: 100%;
+    background: #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* ===== SKILL PROGRESS ===== */
+.skill {
+    height: 18px;
+    color: white;
+    text-align: right;
+    padding-right: 5px;
+    font-size: 12px;
+    border-radius: 5px;
+}
+
+/* ===== INDIVIDUAL SKILL COLORS + WIDTH ===== */
+.python { width: 90%; background: #4CAF50; }
+.cpp { width: 80%; background: #2196F3; }
+.matlab { width: 85%; background: #f39c12; }
+.yolo { width: 95%; background: #e74c3c; }
+.opencv { width: 85%; background: #9b59b6; }
+
+/* LANGUAGES */
+.eng { width: 90%; background: #4CAF50; }
+.ban { width: 100%; background: #2ecc71; }
+.malay { width: 50%; background: #f39c12; }
+
+/* ===== MAIN CONTENT ===== */
 .main {
     margin-left: 300px;
     padding: 20px;
-}
-
-/* Navbar */
-.navbar {
-    background: #2a9d8f;
-    padding: 10px;
-}
-
-.navbar a {
-    margin: 10px;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-/* Sections */
-.content-section {
-    display: none;
-    margin-top: 30px;
-}
-
-/* Cards */
-.card {
-    background: #f2f2f2;
-    padding: 15px;
-    margin: 10px 0;
-    border-radius: 10px;
 }
