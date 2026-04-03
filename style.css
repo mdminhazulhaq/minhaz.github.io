@@ -7,8 +7,8 @@ body {
 /* ===== SIDEBAR ===== */
 .sidebar {
     position: fixed;      
-    width: 420px;   /* 🔥 REDUCED width (previously too large) */
-    height: 100%;
+    width: 380px;   /* 🔥 REDUCED width (previously too large) */
+    height: 90%;
     background: #1e1e2f;
     color: white;
     padding: 20px;
@@ -17,10 +17,10 @@ body {
 
 /* ===== PROFILE IMAGE ===== */
 .profile-img {
-    width: 98%;        /* 🔥 98% width (slight margin from edges) */
-    height: auto;      /* Keep original ratio (NO CUTTING) */
+    width: auto;        /* 🔥 98% width (slight margin from edges) */
+    height: 90%;      /* Keep original ratio (NO CUTTING) */
 
-    transform: scale(0.98);  
+    transform: scale(0.90);  
     /*
     🔥 This makes image appear ~98% of original size
     (both width & height slightly reduced)
@@ -99,7 +99,7 @@ body {
 
 /* ===== MAIN CONTENT ===== */
 .main {
-    margin-left: 460px;  
+    margin-left: 420px;  
     /*
     🔥 MUST match sidebar width + gap
     Sidebar = 420px → use ~460px
