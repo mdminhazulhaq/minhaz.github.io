@@ -1,91 +1,95 @@
 /* ===== GENERAL PAGE SETTINGS ===== */
 body {
-    margin: 0; /* Remove default browser margin */
-    font-family: Arial, sans-serif; /* Clean readable font */
-    background-color: #f5f7fa; /* Light page background */
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fa;
 }
 
 /* ===== SIDEBAR DESIGN ===== */
 .sidebar {
-    position: fixed;          /* Keep sidebar fixed while scrolling */
-    left: 80px;               /* 🔥 80px empty space from the left side */
-    top: 0;                   /* Start from top */
-    width: 340px;             /* Sidebar width unchanged */
-    height: 100vh;            /* Full screen height unchanged */
-    background: #1e1e2f;      /* Sidebar background unchanged */
-    color: white;             /* Text color unchanged */
-    padding: 0;               /* No gap around image unchanged */
-    overflow-y: auto;         /* Vertical scroll if sidebar content is long */
-    overflow-x: hidden;       /* No horizontal scroll */
+    position: fixed;
+    left: 80px;              /* LEFT outer space (unchanged) */
+    top: 0;
+
+    width: 340px;
+    height: 100vh;
+
+    background: #1e1e2f;
+    color: white;
+
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 /* ===== PROFILE IMAGE ===== */
 .profile-img {
-    width: 100%;              /* Match sidebar width */
-    height: 360px;            /* Image height unchanged */
-    object-fit: cover;        /* Keep same image display style */
-    object-position: center top; /* Keep top of image visible */
-    display: block;           /* Remove default inline gap */
+    width: 100%;
+    height: 360px;
+
+    object-fit: cover;
+    object-position: center top;
+
+    display: block;
 }
 
 /* ===== SIDEBAR CONTENT ===== */
 .sidebar-content {
-    padding: 15px;            /* Inner spacing unchanged */
+    padding: 15px;
 }
 
 /* ===== NAME ===== */
 .sidebar h2 {
-    margin-top: 10px;         /* Name spacing unchanged */
-    font-size: 22px;          /* Name size unchanged */
+    margin-top: 10px;
+    font-size: 22px;
 }
 
 /* ===== ROLE TEXT ===== */
 .role {
-    color: lightgray;         /* Role color unchanged */
-    margin-bottom: 10px;      /* Space below unchanged */
-    font-size: 15px;          /* Font size unchanged */
+    color: lightgray;
+    margin-bottom: 10px;
+    font-size: 15px;
 }
 
 /* ===== BASIC TEXT ===== */
 .sidebar p {
-    font-size: 14px;          /* Paragraph size unchanged */
-    margin: 5px 0;            /* Paragraph spacing unchanged */
+    font-size: 14px;
+    margin: 5px 0;
 }
 
 /* ===== LINKS ===== */
 .sidebar a {
-    display: block;           /* Each link on a new line */
-    color: white;             /* Link color unchanged */
-    margin: 6px 0;            /* Link spacing unchanged */
-    text-decoration: none;    /* Remove underline unchanged */
-    font-size: 14px;          /* Font size unchanged */
+    display: block;
+    color: white;
+    margin: 6px 0;
+    text-decoration: none;
+    font-size: 14px;
 }
 
 /* ===== WHITE BOX ===== */
 .box {
-    background: white;        /* Box background unchanged */
-    color: black;             /* Text color unchanged */
-    padding: 10px;            /* Box padding unchanged */
-    margin-top: 15px;         /* Space above box unchanged */
-    border-radius: 6px;       /* Rounded corner unchanged */
+    background: white;
+    color: black;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 6px;
 }
 
 /* ===== SKILL BAR ===== */
 .skill-bar {
-    width: 100%;              /* Full box width */
-    background: #ddd;         /* Background bar color unchanged */
-    border-radius: 4px;       /* Rounded bar unchanged */
-    margin-bottom: 8px;       /* Space below each bar unchanged */
+    width: 100%;
+    background: #ddd;
+    border-radius: 4px;
+    margin-bottom: 8px;
 }
 
-/* ===== SKILL PROGRESS ===== */
 .skill {
-    height: 16px;             /* Bar height unchanged */
-    color: white;             /* Text color unchanged */
-    text-align: right;        /* Percentage on right unchanged */
-    padding-right: 5px;       /* Space before percentage unchanged */
-    font-size: 11px;          /* Font size unchanged */
-    border-radius: 4px;       /* Rounded bar unchanged */
+    height: 16px;
+    color: white;
+    text-align: right;
+    padding-right: 5px;
+    font-size: 11px;
+    border-radius: 4px;
 }
 
 /* ===== SKILL LEVELS ===== */
@@ -102,79 +106,75 @@ body {
 
 /* ===== MAIN CONTENT ===== */
 .main {
-    margin-left: 500px;
+    margin-left: 440px;
     /*
-    80px left empty space
-    + 340px sidebar width
-    + 80px gap between sidebar and content
-    = 500px
+    🔥 NEW CALCULATION:
+    80px (left outer space)
+    + 340px (sidebar)
+    + 20px (gap you want)
+    = 440px
     */
 
-    margin-right: 80px; /* 🔥 80px empty space on the right side */
+    margin-right: 80px;  /* right outer space (unchanged) */
 
-    padding: 25px; /* Keep inner spacing unchanged */
+    padding: 25px;
 }
 
 /* ===== TOP MENU ===== */
 .top-menu {
-    display: flex;            /* Menu in one line */
-    flex-wrap: wrap;          /* Allow wrapping if needed */
-    gap: 10px;                /* Space between menu buttons */
-    margin-bottom: 25px;      /* Space below menu */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 25px;
 }
 
 /* ===== BUTTON ===== */
 .top-menu button {
-    background-color: #1e1e2f; /* Button background unchanged */
-    color: white;              /* Button text color unchanged */
-    border: none;              /* No border unchanged */
-    padding: 10px 18px;        /* Button size unchanged */
-    border-radius: 6px;        /* Rounded corners unchanged */
-    cursor: pointer;           /* Pointer on hover */
-    font-size: 14px;           /* Font size unchanged */
+    background-color: #1e1e2f;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
 }
 
-/* ===== BUTTON HOVER ===== */
 .top-menu button:hover {
-    background-color: #34344a; /* Hover color unchanged */
+    background-color: #34344a;
 }
 
 /* ===== CONTENT SECTION ===== */
 .content-section {
-    display: none; /* Hidden by default, shown by JavaScript */
+    display: none;
 }
 
-/* ===== SECTION TITLE ===== */
 .content-section h1 {
-    margin-top: 0;            /* Remove top gap */
-    color: #1e1e2f;           /* Title color unchanged */
-    font-size: 30px;          /* Title size unchanged */
+    margin-top: 0;
+    color: #1e1e2f;
+    font-size: 30px;
 }
 
-/* ===== SECTION TEXT ===== */
 .content-section p,
 .content-section li {
-    font-size: 16px;          /* Text size unchanged */
-    line-height: 1.7;         /* Line spacing unchanged */
-    color: #333;              /* Text color unchanged */
+    font-size: 16px;
+    line-height: 1.7;
+    color: #333;
 }
 
-/* ===== CONTENT CARD ===== */
+/* ===== CARD ===== */
 .section-card {
-    background: white;        /* Card background unchanged */
-    padding: 20px;            /* Card padding unchanged */
-    border-radius: 10px;      /* Rounded corners unchanged */
-    margin-bottom: 20px;      /* Space between cards unchanged */
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); /* Shadow unchanged */
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
-/* ===== CARD TITLE ===== */
 .section-card h3 {
-    margin-top: 0;            /* Remove top margin */
-    color: #1e1e2f;           /* Title color unchanged */
+    margin-top: 0;
+    color: #1e1e2f;
 }
 
-/* ===== LIST STYLE ===== */
 .section-card ul {
-    padding-left: 20px;       /* Indent list unchanged */
+    padding-left: 20px;
 }
