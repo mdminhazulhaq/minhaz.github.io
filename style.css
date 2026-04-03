@@ -1,33 +1,40 @@
-/* ===== GENERAL ===== */
+/* ===== GENERAL PAGE SETTINGS ===== */
 body {
-    margin: 0; /* Remove default margin */
+    margin: 0; /* Remove default browser margin */
     font-family: Arial, sans-serif; /* Clean font */
 }
 
-/* ===== SIDEBAR ===== */
+/* ===== SIDEBAR DESIGN ===== */
 .sidebar {
-    position: fixed;      
-    width: 380px;   /* 🔥 REDUCED width (previously too large) */
-    height: 90%;
-    background: #1e1e2f;
-    color: white;
-    padding: 20px;
-    overflow-y: auto;
+    position: fixed;          
+    width: 390px;  /* 🔥 Reduced by 30px (previously 420px) */
+    height: 100%;             
+    background: #1e1e2f;      
+    color: white;             
+    padding: 20px;            
+    overflow-y: auto;         
 }
 
-/* ===== PROFILE IMAGE ===== */
+/* ===== PROFILE IMAGE (PRECISE CROPPING CONTROL) ===== */
 .profile-img {
-    width: auto;        /* 🔥 98% width (slight margin from edges) */
-    height: 90%;      /* Keep original ratio (NO CUTTING) */
+    width: 100%;              /* Full width of sidebar */
 
-    transform: scale(0.90);  
+    height: 497px;            
     /*
-    🔥 This makes image appear ~98% of original size
-    (both width & height slightly reduced)
+    Original image height = 567px
+    Remove 20px (top) + 50px (bottom) = 70px
+    → 567 - 70 = 497px
     */
 
-    display: block;
-    margin: 0 auto;    /* Center image */
+    object-fit: cover;        
+
+    object-position: center -20px;  
+    /*
+    Move image UP by 20px:
+    → Cuts 20px from TOP
+    → Remaining cut happens at bottom (~50px)
+    */
+
     border-radius: 5px;
 }
 
@@ -37,20 +44,20 @@ body {
     font-size: 24px;
 }
 
-/* ===== ROLE ===== */
+/* ===== ROLE TEXT ===== */
 .role {
     color: lightgray;
     margin-bottom: 12px;
     font-size: 16px;
 }
 
-/* ===== TEXT ===== */
+/* ===== BASIC TEXT (location, email) ===== */
 .sidebar p {
     font-size: 15px;
     margin: 6px 0;
 }
 
-/* ===== LINKS ===== */
+/* ===== LINKS (Scholar, CV, GitHub) ===== */
 .sidebar a {
     display: block;
     color: white;
@@ -58,7 +65,7 @@ body {
     text-decoration: none;
 }
 
-/* ===== WHITE BOX ===== */
+/* ===== WHITE BOX (Skills & Languages) ===== */
 .box {
     background: white;
     color: black;
@@ -67,7 +74,7 @@ body {
     border-radius: 8px;
 }
 
-/* ===== SKILL BAR ===== */
+/* ===== SKILL BAR BACKGROUND ===== */
 .skill-bar {
     width: 100%;
     background: #ddd;
@@ -97,12 +104,12 @@ body {
 .ban { width: 100%; background: #2ecc71; }
 .malay { width: 50%; background: #f39c12; }
 
-/* ===== MAIN CONTENT ===== */
+/* ===== MAIN CONTENT AREA ===== */
 .main {
-    margin-left: 420px;  
+    margin-left: 430px;  
     /*
-    🔥 MUST match sidebar width + gap
-    Sidebar = 420px → use ~460px
+    Sidebar width = 390px
+    + spacing ≈ 40px
     */
 
     padding: 20px;
