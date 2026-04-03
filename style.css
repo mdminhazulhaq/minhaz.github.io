@@ -1,28 +1,54 @@
 /* ===== GENERAL PAGE SETTINGS ===== */
 body {
-    margin: 0; /* Remove default browser margin */
-    font-family: Arial, sans-serif; /* Clean readable font */
-    background-color: #f5f7fa; /* Light page background */
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* 🔥 Light background like your friend */
 }
 
 /* ===== SIDEBAR DESIGN ===== */
 .sidebar {
-    position: fixed;          
-    width: 340px;  
-    height: 100vh;            
-    background: #1e1e2f;      
-    color: white;             
-    padding: 0;               
-    overflow-y: auto;         
-    overflow-x: hidden;       
+    position: fixed;
+
+    left: 20px;  
+    /*
+    🔥 THIS LINE CREATES SPACE ON LEFT
+    Increase/decrease this value:
+    10px = small gap
+    20px = medium gap (recommended)
+    30px = larger gap
+    */
+
+    width: 340px;
+    height: calc(100vh - 40px); 
+    /*
+    🔥 Reduce height slightly so top & bottom also have spacing
+    */
+
+    top: 20px;  /* 🔥 space from top */
+    bottom: 20px; /* 🔥 space from bottom */
+
+    background: #1e1e2f;
+    color: white;
+
+    padding: 0;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    border-radius: 8px;  
+    /*
+    🔥 Rounded edges like your friend (optional but looks better)
+    */
 }
 
-/* ===== PROFILE IMAGE (FIXED TOP CUT ISSUE) ===== */
+/* ===== PROFILE IMAGE ===== */
 .profile-img {
-    width: 100%; /* Always match sidebar width */
-    height: 360px; /* Fixed height */
-    object-fit: cover;  
-    object-position: center top; /* Keep top part visible */
+    width: 100%;
+    height: 360px;
+
+    object-fit: cover;
+    object-position: center top;
+
     display: block;
 }
 
@@ -76,7 +102,6 @@ body {
     margin-bottom: 8px;
 }
 
-/* ===== SKILL PROGRESS ===== */
 .skill {
     height: 16px;
     color: white;
@@ -86,84 +111,25 @@ body {
     border-radius: 4px;
 }
 
-/* ===== SKILL LEVELS ===== */
+/* ===== SKILLS ===== */
 .python { width: 90%; background: #4CAF50; }
 .cpp { width: 80%; background: #2196F3; }
 .matlab { width: 85%; background: #f39c12; }
 .yolo { width: 95%; background: #e74c3c; }
 .opencv { width: 85%; background: #9b59b6; }
 
-/* ===== LANGUAGE LEVELS ===== */
+/* ===== LANGUAGES ===== */
 .eng { width: 90%; background: #4CAF50; }
 .ban { width: 100%; background: #2ecc71; }
 .malay { width: 50%; background: #f39c12; }
 
 /* ===== MAIN CONTENT ===== */
 .main {
-    margin-left: 360px;  
+    margin-left: 400px;  
+    /*
+    🔥 Adjusted because sidebar moved right
+    Sidebar (340px) + left gap (20px) + spacing
+    */
+
     padding: 25px;
-}
-
-/* ===== TOP MENU ===== */
-.top-menu {
-    display: flex; /* Arrange menu buttons in one line */
-    flex-wrap: wrap; /* Allow wrapping on smaller screens */
-    gap: 10px; /* Space between buttons */
-    margin-bottom: 25px; /* Space below menu */
-}
-
-/* ===== TOP MENU BUTTONS ===== */
-.top-menu button {
-    background-color: #1e1e2f; /* Dark button color */
-    color: white; /* Text color */
-    border: none; /* Remove default border */
-    padding: 10px 18px; /* Button size */
-    border-radius: 6px; /* Rounded corners */
-    cursor: pointer; /* Pointer on hover */
-    font-size: 14px;
-}
-
-/* ===== BUTTON HOVER EFFECT ===== */
-.top-menu button:hover {
-    background-color: #34344a; /* Slightly lighter on hover */
-}
-
-/* ===== CONTENT SECTION ===== */
-.content-section {
-    display: none; /* Hide all sections by default */
-}
-
-/* ===== SECTION TITLE ===== */
-.content-section h1 {
-    margin-top: 0;
-    color: #1e1e2f;
-    font-size: 30px;
-}
-
-/* ===== SECTION PARAGRAPH ===== */
-.content-section p,
-.content-section li {
-    font-size: 16px;
-    line-height: 1.7;
-    color: #333;
-}
-
-/* ===== SECTION CARD ===== */
-.section-card {
-    background: white; /* White content box */
-    padding: 20px; /* Inner space */
-    border-radius: 10px; /* Rounded corners */
-    margin-bottom: 20px; /* Space between cards */
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); /* Soft shadow */
-}
-
-/* ===== SECTION CARD TITLE ===== */
-.section-card h3 {
-    margin-top: 0;
-    color: #1e1e2f;
-}
-
-/* ===== LIST STYLE ===== */
-.section-card ul {
-    padding-left: 20px;
 }
