@@ -22,7 +22,6 @@
          - Replace "profile.jpg" with your image file -->
     <img src="profile.jpg" class="profile-img">
 
-
     <!-- ===== SIDEBAR CONTENT (TEXT AREA) ===== -->
     <!-- This wrapper adds padding ONLY to text, NOT image -->
     <div class="sidebar-content">
@@ -54,7 +53,6 @@
             <h3>Skills</h3>
 
             <!-- Each skill has name + progress bar -->
-
             <p>Python</p>
             <div class="skill-bar">
                 <div class="skill python">90%</div>
@@ -107,14 +105,182 @@
 <!-- ================= SIDEBAR END ================= -->
 
 
-<!-- ================= MAIN CONTENT ================= -->
+<!-- ================= MAIN CONTENT START ================= -->
 <div class="main">
 
-    <!-- Temporary text (we will design sections next) -->
-    <h1>Sidebar Updated ✅</h1>
+    <!-- ===== TOP NAVIGATION MENU ===== -->
+    <!-- Click any menu item to show only that section -->
+    <div class="top-menu">
+        <button onclick="showSection('overview')">Overview</button>
+        <button onclick="showSection('research')">Research</button>
+        <button onclick="showSection('projects')">Projects</button>
+        <button onclick="showSection('teaching')">Teaching</button>
+        <button onclick="showSection('awards')">Awards</button>
+        <button onclick="showSection('contact')">Contact</button>
+    </div>
+
+    <!-- ===== OVERVIEW SECTION ===== -->
+    <section id="overview" class="content-section">
+        <h1>Overview</h1>
+        <p>
+            I am a Graduate Research Assistant at Universiti Malaya, working on lightweight deep learning
+            models for real-time object detection on embedded and edge devices. My work focuses on improving
+            the speed–accuracy trade-off of YOLO-based models for practical deployment in UAV, medical,
+            and industrial applications.
+        </p>
+
+        <p>
+            My current research interests include edge AI, efficient computer vision, model optimization,
+            lightweight object detection, and embedded deployment using platforms such as Jetson Nano.
+        </p>
+    </section>
+
+    <!-- ===== RESEARCH SECTION ===== -->
+    <section id="research" class="content-section">
+        <h1>Research</h1>
+
+        <div class="section-card">
+            <h3>Research Interests</h3>
+            <ul>
+                <li>Lightweight YOLO optimization for embedded systems</li>
+                <li>Edge AI and real-time computer vision</li>
+                <li>UAV object detection and aerial imagery analysis</li>
+                <li>Medical image analysis using deep learning</li>
+                <li>Efficient deployment on resource-constrained devices</li>
+            </ul>
+        </div>
+
+        <div class="section-card">
+            <h3>Current Research Focus</h3>
+            <p>
+                Optimization of lightweight YOLO models for automated object detection on embedded devices,
+                with emphasis on balancing detection accuracy, inference speed, and memory efficiency.
+            </p>
+        </div>
+
+        <div class="section-card">
+            <h3>Selected Research Works</h3>
+            <ul>
+                <li>HAT-YOLO: Hybrid Attention and Transformer-Integrated Model for UAV Object Detection on Embedded Devices</li>
+                <li>A Lightweight Optimized YOLOv8n Model for Real-Time Aerial Object Detection on Limited Memory Embedded Platforms</li>
+                <li>Improved YOLOv8n Model for Automated Wood Texture Defect Detection based on Computer Vision</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- ===== PROJECTS SECTION ===== -->
+    <section id="projects" class="content-section">
+        <h1>Projects</h1>
+
+        <div class="section-card">
+            <h3>HAT-YOLO</h3>
+            <p>
+                A hybrid attention and transformer-integrated YOLO model designed for efficient UAV object
+                detection on embedded devices.
+            </p>
+        </div>
+
+        <div class="section-card">
+            <h3>EdgeLite-YOLOv8n</h3>
+            <p>
+                A lightweight and optimized YOLOv8n-based detection framework for real-time aerial object
+                detection on limited-memory embedded platforms.
+            </p>
+        </div>
+
+        <div class="section-card">
+            <h3>Wood Texture Defect Detection</h3>
+            <p>
+                Computer vision-based automated defect detection system using an improved YOLOv8n model
+                for industrial inspection applications.
+            </p>
+        </div>
+
+        <div class="section-card">
+            <h3>Supporting Research Projects</h3>
+            <ul>
+                <li>Sustainable and Smart Food Packaging System</li>
+                <li>Algae Cultivation</li>
+                <li>Electrochemical Sensor Fabrication for Hydrogen Peroxide Detection</li>
+                <li>ARFES: Augmented Reality-Based Educational Framework for Engineering Students</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- ===== TEACHING SECTION ===== -->
+    <section id="teaching" class="content-section">
+        <h1>Teaching</h1>
+
+        <div class="section-card">
+            <h3>Lab Demonstrator / Instructor</h3>
+            <p>
+                Department of Electrical Engineering, Universiti Malaya
+            </p>
+            <p>
+                Conducted laboratory sessions for undergraduate students and explained electrical and
+                electromagnetic experiments including circuit laws, amplifiers, diode clipping,
+                magnetic induction, Lorentz force, and PCB layout design.
+            </p>
+        </div>
+
+        <div class="section-card">
+            <h3>Teaching Contributions</h3>
+            <ul>
+                <li>Guided students in performing experiments safely and accurately</li>
+                <li>Helped students analyze voltage, current, power, gain, capacitance, and inductance results</li>
+                <li>Troubleshot oscilloscopes, multimeters, and function generators during lab sessions</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- ===== AWARDS SECTION ===== -->
+    <section id="awards" class="content-section">
+        <h1>Awards</h1>
+
+        <div class="section-card">
+            <ul>
+                <li><strong>Best Presenter</strong> – 4th International Orthopaedic Postgraduate Symposium (IOPS4), Universiti Malaya, 2025</li>
+                <li><strong>Best Project Award</strong> – Science Fair 2019, Jashore University of Science and Technology</li>
+                <li><strong>Best Project Award</strong> – Student to Startup 2.0 Campus Hunt, JUST, 2019</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <section id="contact" class="content-section">
+        <h1>Contact</h1>
+
+        <div class="section-card">
+            <p><strong>Name:</strong> Md. Minhazul Haq</p>
+            <p><strong>Email:</strong> minhaz.um.masters@gmail.com</p>
+            <p><strong>Location:</strong> Kuala Lumpur, Malaysia</p>
+            <p><strong>Role:</strong> Researcher</p>
+        </div>
+    </section>
 
 </div>
+<!-- ================= MAIN CONTENT END ================= -->
 
+
+<!-- ================= JAVASCRIPT START ================= -->
+<script>
+    /* ===== SHOW ONLY ONE SECTION AT A TIME ===== */
+    function showSection(sectionId) {
+        const sections = document.querySelectorAll('.content-section');
+
+        sections.forEach(function(section) {
+            section.style.display = 'none';
+        });
+
+        document.getElementById(sectionId).style.display = 'block';
+    }
+
+    /* ===== DEFAULT SECTION ON PAGE LOAD ===== */
+    window.onload = function() {
+        showSection('overview');
+    };
+</script>
+<!-- ================= JAVASCRIPT END ================= -->
 
 </body>
 </html>
