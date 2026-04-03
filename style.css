@@ -7,7 +7,7 @@ body {
 /* ===== SIDEBAR ===== */
 .sidebar {
     position: fixed;
-    width: 380px;
+    width: 280px;
     height: 100%;
     background: #1e1e2f;
     color: white;
@@ -18,7 +18,7 @@ body {
 /* ===== LARGE PROFILE IMAGE ===== */
 .profile-large {
     width: 100%;       /* FULL WIDTH */
-    height: 100%;     /* BIG HEIGHT */
+    height: 300px;     /* BIG HEIGHT */
     object-fit: cover; /* KEEP PROPORTION */
     border-radius: 5px;
 }
