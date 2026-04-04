@@ -149,6 +149,16 @@ body {
     color: #333;
 }
 
+/* ===== LINKS INSIDE MAIN CONTENT ===== */
+.main a {
+    color: #1e4365;
+    text-decoration: none;
+}
+
+.main a:hover {
+    text-decoration: underline;
+}
+
 /* ===== CONTENT CARD ===== */
 .section-card {
     background: white;
@@ -163,51 +173,48 @@ body {
     color: #1e1e2f;
 }
 
-.section-card ul {
-    padding-left: 20px;
+.section-card ul,
+.section-card ol {
+    padding-left: 22px;
 }
 
-/* ===================================================== */
-/* ===== OVERVIEW SECTION (ONLY SPACING REDUCED) ===== */
-/* ===================================================== */
-
+/* ===== OVERVIEW SECTION CUSTOM STYLE ===== */
 #overview {
     font-family: "Times New Roman", Times, serif;
     color: #111;
-    padding-top: 4px;
 }
 
-/* NAME */
+/* Name */
 .overview-name {
     font-size: 28px;
     font-weight: 700;
     color: #1e4365;
-    margin: 0 0 12px 0;   /* 🔥 reduced from 26px → 12px */
+    margin: 0 0 10px 0;
 }
 
-/* ROLE */
+/* Role line */
 .overview-role {
     font-size: 18px;
     color: #7a2f8f;
-    margin: 0 0 10px 0;   /* 🔥 reduced spacing */
-    line-height: 1.3;
+    margin: 0 0 10px 0;
+    line-height: 1.5;
 }
 
-/* NORMAL LINES */
+/* Normal lines */
 .overview-line {
     font-size: 17px;
-    color: #111;
-    margin: 0 0 8px 0;   /* 🔥 reduced spacing */
-    line-height: 1.3;
+    margin: 0 0 10px 0;
+    line-height: 1.5;
 }
 
-/* UNIVERSITY */
+/* University line */
 .overview-university {
     font-size: 18px;
-    margin: 0 0 8px 0;   /* 🔥 reduced spacing */
-    line-height: 1.3;
+    margin: 0 0 10px 0;
+    line-height: 1.5;
 }
 
+/* University link */
 .overview-university a {
     color: #7a2f8f;
     font-style: italic;
@@ -218,19 +225,20 @@ body {
     text-decoration: underline;
 }
 
-/* BIOGRAPHY */
+/* Biography paragraphs */
 .overview-bio {
     font-size: 17px;
-    color: #111;
     line-height: 1.5;
     text-align: justify;
-    margin: 18px 0 0 0;  /* 🔥 reduced gap before bio */
+    margin: 20px 0 0 0;
 }
 
+/* Brief Bio label */
 .bio-label {
     font-weight: 400;
 }
 
+/* Name inside bio */
 .bio-name {
     font-weight: 700;
     color: #1e4365;
