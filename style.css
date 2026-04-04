@@ -33,12 +33,6 @@ body {
     padding: 15px;
 }
 
-/* ===== SIDEBAR NAME ===== */
-.sidebar h2 {
-    margin-top: 10px;
-    font-size: 22px;
-}
-
 /* ===== SIDEBAR ROLE ===== */
 .role {
     color: lightgray;
@@ -59,6 +53,10 @@ body {
     margin: 6px 0;
     text-decoration: none;
     font-size: 14px;
+}
+
+.sidebar a:hover {
+    text-decoration: underline;
 }
 
 /* ===== WHITE BOX ===== */
@@ -205,26 +203,16 @@ body {
     padding-left: 22px;
 }
 
-/* ===== OVERVIEW SECTION CUSTOM STYLE ===== */
+/* ===== OVERVIEW SECTION STYLE ===== */
 #overview {
     font-family: "Times New Roman", Times, serif;
     color: #111111;
 }
 
-/* Overview card spacing */
 .overview-card {
     padding: 22px 24px 24px 24px;
 }
 
-/* Name inside overview */
-.overview-name {
-    font-size: 28px;
-    font-weight: 700;
-    color: #1e4365;
-    margin: 0 0 10px 0;
-}
-
-/* Role line */
 .overview-role {
     font-size: 18px;
     color: #7a2f8f;
@@ -232,21 +220,18 @@ body {
     line-height: 1.5;
 }
 
-/* Normal overview lines */
 .overview-line {
     font-size: 17px;
     margin: 0 0 10px 0;
     line-height: 1.5;
 }
 
-/* University line */
 .overview-university {
     font-size: 18px;
     margin: 0 0 10px 0;
     line-height: 1.5;
 }
 
-/* University link */
 .overview-university a {
     color: #7a2f8f;
     font-style: italic;
@@ -257,7 +242,6 @@ body {
     text-decoration: underline;
 }
 
-/* Biography paragraphs */
 .overview-bio {
     font-size: 17px;
     line-height: 1.5;
@@ -265,12 +249,10 @@ body {
     margin: 20px 0 0 0;
 }
 
-/* Bio label */
 .bio-label {
     font-weight: 400;
 }
 
-/* Name inside bio */
 .bio-name {
     font-weight: 700;
     color: #1e4365;
