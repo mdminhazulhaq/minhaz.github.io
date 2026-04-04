@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
 
-    <!-- ===== PAGE TITLE (Shown in browser tab) ===== -->
+    <!-- ===== PAGE TITLE ===== -->
     <title>Md. Minhazul Haq</title>
 
     <!-- ===== LINK CSS FILE ===== -->
@@ -16,14 +16,9 @@
 <div class="sidebar">
 
     <!-- ===== PROFILE IMAGE ===== -->
-    <!-- IMPORTANT:
-         - Image takes FULL sidebar width (no gap)
-         - Height controlled in CSS (360px)
-         - Replace "profile.jpg" with your image file -->
     <img src="profile.jpg" class="profile-img">
 
-    <!-- ===== SIDEBAR CONTENT (TEXT AREA) ===== -->
-    <!-- This wrapper adds padding ONLY to text, NOT image -->
+    <!-- ===== SIDEBAR CONTENT ===== -->
     <div class="sidebar-content">
 
         <!-- ===== NAME ===== -->
@@ -37,22 +32,14 @@
         <p>📧 minhaz.um.masters@gmail.com</p>
 
         <!-- ===== LINKS ===== -->
-        <!-- Replace # with real links -->
-
-        <!-- Google Scholar -->
         <a href="#" target="_blank">🎓 Google Scholar</a>
-
-        <!-- CV (Make sure filename matches uploaded file) -->
         <a href="Minhazul_Haq_CV.pdf" target="_blank">📄 CV</a>
-
-        <!-- GitHub -->
         <a href="#" target="_blank">💻 GitHub</a>
 
         <!-- ===== SKILLS SECTION ===== -->
         <div class="box">
             <h3>Skills</h3>
 
-            <!-- Each skill has name + progress bar -->
             <p>Python</p>
             <div class="skill-bar">
                 <div class="skill python">90%</div>
@@ -99,8 +86,7 @@
             </div>
         </div>
 
-    </div> <!-- END sidebar-content -->
-
+    </div>
 </div>
 <!-- ================= SIDEBAR END ================= -->
 
@@ -109,7 +95,6 @@
 <div class="main">
 
     <!-- ===== TOP NAVIGATION MENU ===== -->
-    <!-- Click any menu item to show only that section -->
     <div class="top-menu">
         <button onclick="showSection('overview')">Overview</button>
         <button onclick="showSection('research')">Research</button>
@@ -121,17 +106,35 @@
 
     <!-- ===== OVERVIEW SECTION ===== -->
     <section id="overview" class="content-section">
-        <h1>Overview</h1>
-        <p>
-            I am a Graduate Research Assistant at Universiti Malaya, working on lightweight deep learning
-            models for real-time object detection on embedded and edge devices. My work focuses on improving
-            the speed–accuracy trade-off of YOLO-based models for practical deployment in UAV, medical,
-            and industrial applications.
+
+        <!-- Main name -->
+        <h1 class="overview-name">Md. Minhazul Haq</h1>
+
+        <!-- Position line -->
+        <p class="overview-role">Graduate Research Assistant &amp; Graduate Teaching Assistant</p>
+
+        <!-- Degree -->
+        <p class="overview-line">Master of Engineering Science (Research)</p>
+
+        <!-- Department -->
+        <p class="overview-line">Department of Electrical Engineering</p>
+
+        <!-- University with clickable URL -->
+        <p class="overview-university">
+            <a href="https://www.um.edu.my/" target="_blank">Universiti Malaya (UM)</a>
         </p>
 
-        <p>
-            My current research interests include edge AI, efficient computer vision, model optimization,
-            lightweight object detection, and embedded deployment using platforms such as Jetson Nano.
+        <!-- Location -->
+        <p class="overview-line">50630 Kuala Lumpur, Malaysia</p>
+
+        <!-- Brief Biography -->
+        <p class="overview-bio">
+            <span class="bio-label">Brief Bio:</span>
+            <span class="bio-name">Md. Minhazul Haq</span> is currently pursuing a Master of Engineering Science (Research) in Artificial Intelligence at Universiti Malaya, Malaysia, since November 2023. He is a recipient of the Universiti Malaya Scholarship Scheme (UMSS) and is serving as a Graduate Research Assistant (Nov. 2023 – Feb. 2026), conducting research in the field of Artificial Intelligence at the Centre of Intelligent Systems for Emerging Technology (CISET) Lab, Universiti Malaya. Minhazul is also appointed as a Graduate Teaching Assistant under the Universiti Malaya Graduate Teaching Assistantship (GTA) Scheme (Oct. 2025 – Feb. 2026). He received his Bachelor of Electrical Engineering from Jashore University of Science and Technology (JUST), Bangladesh, in 2022.
+        </p>
+
+        <p class="overview-bio">
+            Minhazul’s research and teaching interests include Artificial Intelligence, Machine Learning, Computer Vision on edge devices, Autonomous Transportation, Pedestrian Detection, and Internet of Things (IoT). His master’s dissertation focuses on the “Optimization of Lightweight YOLO Models for Automated Object Detection on Embedded Devices”.
         </p>
     </section>
 
@@ -162,7 +165,7 @@
             <h3>Selected Research Works</h3>
             <ul>
                 <li>HAT-YOLO: Hybrid Attention and Transformer-Integrated Model for UAV Object Detection on Embedded Devices</li>
-                <li>A Lightweight Optimized YOLOv8n Model for Real-Time Aerial Object Detection on Limited Memory Embedded Platforms</li>
+                <li>EdgeLite-YOLOv8n: An Efficient YOLOv8n Model for Real-Time Vehicle Detection in UAV Imagery on Embedded Platforms</li>
                 <li>Improved YOLOv8n Model for Automated Wood Texture Defect Detection based on Computer Vision</li>
             </ul>
         </div>
@@ -175,24 +178,21 @@
         <div class="section-card">
             <h3>HAT-YOLO</h3>
             <p>
-                A hybrid attention and transformer-integrated YOLO model designed for efficient UAV object
-                detection on embedded devices.
+                A hybrid attention and transformer-integrated YOLO model designed for efficient UAV object detection on embedded devices.
             </p>
         </div>
 
         <div class="section-card">
             <h3>EdgeLite-YOLOv8n</h3>
             <p>
-                A lightweight and optimized YOLOv8n-based detection framework for real-time aerial object
-                detection on limited-memory embedded platforms.
+                An efficient YOLOv8n-based framework for real-time vehicle detection in UAV imagery on embedded platforms.
             </p>
         </div>
 
         <div class="section-card">
             <h3>Wood Texture Defect Detection</h3>
             <p>
-                Computer vision-based automated defect detection system using an improved YOLOv8n model
-                for industrial inspection applications.
+                Computer vision-based automated defect detection using an improved YOLOv8n model for industrial inspection applications.
             </p>
         </div>
 
@@ -201,8 +201,8 @@
             <ul>
                 <li>Sustainable and Smart Food Packaging System</li>
                 <li>Algae Cultivation</li>
-                <li>Electrochemical Sensor Fabrication for Hydrogen Peroxide Detection</li>
-                <li>ARFES: Augmented Reality-Based Educational Framework for Engineering Students</li>
+                <li>Fabrication of an Electrochemical Sensor with Nanocomposite Sensing Layer for Hydrogen Peroxide Detection</li>
+                <li>ARFES: Augmented Reality-based Educational Framework for Engineering Students</li>
             </ul>
         </div>
     </section>
@@ -212,14 +212,11 @@
         <h1>Teaching</h1>
 
         <div class="section-card">
-            <h3>Lab Demonstrator / Instructor</h3>
+            <h3>Graduate Teaching Assistant</h3>
+            <p>Department of Electrical Engineering, Universiti Malaya</p>
             <p>
-                Department of Electrical Engineering, Universiti Malaya
-            </p>
-            <p>
-                Conducted laboratory sessions for undergraduate students and explained electrical and
-                electromagnetic experiments including circuit laws, amplifiers, diode clipping,
-                magnetic induction, Lorentz force, and PCB layout design.
+                Conducted laboratory sessions for undergraduate students and explained electrical and electromagnetic experiments,
+                including circuit laws, amplifiers, diode clipping, magnetic induction, Lorentz force, and PCB layout design.
             </p>
         </div>
 
@@ -227,7 +224,7 @@
             <h3>Teaching Contributions</h3>
             <ul>
                 <li>Guided students in performing experiments safely and accurately</li>
-                <li>Helped students analyze voltage, current, power, gain, capacitance, and inductance results</li>
+                <li>Assisted students in analyzing voltage, current, capacitance, inductance, power, and gain</li>
                 <li>Troubleshot oscilloscopes, multimeters, and function generators during lab sessions</li>
             </ul>
         </div>
@@ -241,7 +238,7 @@
             <ul>
                 <li><strong>Best Presenter</strong> – 4th International Orthopaedic Postgraduate Symposium (IOPS4), Universiti Malaya, 2025</li>
                 <li><strong>Best Project Award</strong> – Science Fair 2019, Jashore University of Science and Technology</li>
-                <li><strong>Best Project Award</strong> – Student to Startup 2.0 Campus Hunt, JUST, 2019</li>
+                <li><strong>Best Project Award</strong> – Student to Startup 2.0 Campus Hunt, Jashore University of Science and Technology, 2019</li>
             </ul>
         </div>
     </section>
@@ -264,18 +261,14 @@
 
 <!-- ================= JAVASCRIPT START ================= -->
 <script>
-    /* ===== SHOW ONLY ONE SECTION AT A TIME ===== */
     function showSection(sectionId) {
         const sections = document.querySelectorAll('.content-section');
-
         sections.forEach(function(section) {
             section.style.display = 'none';
         });
-
         document.getElementById(sectionId).style.display = 'block';
     }
 
-    /* ===== DEFAULT SECTION ON PAGE LOAD ===== */
     window.onload = function() {
         showSection('overview');
     };
