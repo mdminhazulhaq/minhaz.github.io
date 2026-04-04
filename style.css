@@ -2,7 +2,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f5f7fa;
+    background-color: #efefef;
 }
 
 /* ===== SIDEBAR DESIGN ===== */
@@ -103,30 +103,56 @@ body {
 .main {
     margin-left: 440px;
     margin-right: 80px;
-    padding: 25px;
+    padding: 20px 25px 25px 25px;
+}
+
+/* ===== GREEN NAME HEADER ===== */
+.main-header {
+    background: #27bea8;
+    border: 1px solid #d7d7d7;
+    padding: 28px 20px 28px 20px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.main-header-title {
+    margin: 0;
+    font-size: 34px;
+    font-weight: 500;
+    color: #ffffff;
+    line-height: 1.2;
 }
 
 /* ===== TOP MENU ===== */
 .top-menu {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
-    margin-bottom: 25px;
+    gap: 0;
+    background: #ffffff;
+    border-left: 1px solid #d7d7d7;
+    border-right: 1px solid #d7d7d7;
+    border-bottom: 1px solid #d7d7d7;
+    margin-bottom: 22px;
 }
 
 /* ===== TOP MENU BUTTON ===== */
 .top-menu button {
-    background-color: #1e1e2f;
-    color: white;
+    background: transparent;
+    color: #111111;
     border: none;
-    padding: 10px 18px;
-    border-radius: 6px;
+    padding: 16px 22px 15px 22px;
     cursor: pointer;
     font-size: 14px;
+    font-weight: 400;
+    border-bottom: 3px solid transparent;
 }
 
 .top-menu button:hover {
-    background-color: #34344a;
+    background: #f7f7f7;
+}
+
+.top-menu button.active {
+    border-bottom: 3px solid #1f88e5;
 }
 
 /* ===== CONTENT SECTION ===== */
@@ -146,7 +172,7 @@ body {
 .content-section li {
     font-size: 16px;
     line-height: 1.7;
-    color: #333;
+    color: #333333;
 }
 
 /* ===== LINKS INSIDE MAIN CONTENT ===== */
@@ -161,11 +187,12 @@ body {
 
 /* ===== CONTENT CARD ===== */
 .section-card {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
+    background: #ffffff;
+    padding: 22px;
+    border-radius: 0;
     margin-bottom: 20px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    border: 1px solid #d8d8d8;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
 }
 
 .section-card h3 {
@@ -181,10 +208,15 @@ body {
 /* ===== OVERVIEW SECTION CUSTOM STYLE ===== */
 #overview {
     font-family: "Times New Roman", Times, serif;
-    color: #111;
+    color: #111111;
 }
 
-/* Name */
+/* Overview card spacing */
+.overview-card {
+    padding: 22px 24px 24px 24px;
+}
+
+/* Name inside overview */
 .overview-name {
     font-size: 28px;
     font-weight: 700;
@@ -200,7 +232,7 @@ body {
     line-height: 1.5;
 }
 
-/* Normal lines */
+/* Normal overview lines */
 .overview-line {
     font-size: 17px;
     margin: 0 0 10px 0;
@@ -233,7 +265,7 @@ body {
     margin: 20px 0 0 0;
 }
 
-/* Brief Bio label */
+/* Bio label */
 .bio-label {
     font-weight: 400;
 }
