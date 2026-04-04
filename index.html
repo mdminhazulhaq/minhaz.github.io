@@ -74,47 +74,54 @@
 <!-- ================= MAIN CONTENT START ================= -->
 <div class="main">
 
-    <!-- Top navigation -->
+    <!-- ===== TOP HEADER BAR ===== -->
+    <div class="main-header">
+        <h1 class="main-header-title">Md. Minhazul Haq</h1>
+    </div>
+
+    <!-- ===== TOP NAVIGATION MENU ===== -->
     <div class="top-menu">
-        <button onclick="showSection('overview')">Overview</button>
-        <button onclick="showSection('research')">Research</button>
-        <button onclick="showSection('projects')">Projects</button>
-        <button onclick="showSection('teaching')">Teaching</button>
-        <button onclick="showSection('awards')">Awards</button>
-        <button onclick="showSection('contact')">Contact</button>
+        <button onclick="showSection('overview')" data-section="overview">Overview</button>
+        <button onclick="showSection('research')" data-section="research">Research</button>
+        <button onclick="showSection('projects')" data-section="projects">Projects</button>
+        <button onclick="showSection('teaching')" data-section="teaching">Teaching</button>
+        <button onclick="showSection('awards')" data-section="awards">Awards</button>
+        <button onclick="showSection('contact')" data-section="contact">Contact</button>
     </div>
 
     <!-- ================= OVERVIEW ================= -->
     <section id="overview" class="content-section">
-        <h1 class="overview-name">Md. Minhazul Haq</h1>
+        <div class="section-card overview-card">
+            <h1 class="overview-name">Md. Minhazul Haq</h1>
 
-        <p class="overview-role">Graduate Research Assistant &amp; Graduate Teaching Assistant</p>
+            <p class="overview-role">Graduate Research Assistant &amp; Graduate Teaching Assistant</p>
 
-        <p class="overview-line">Master of Engineering Science (Research)</p>
+            <p class="overview-line">Master of Engineering Science (Research)</p>
 
-        <p class="overview-line">Department of Electrical Engineering</p>
+            <p class="overview-line">Department of Electrical Engineering</p>
 
-        <p class="overview-university">
-            <a href="https://www.um.edu.my/" target="_blank">Universiti Malaya (UM)</a>
-        </p>
+            <p class="overview-university">
+                <a href="https://www.um.edu.my/" target="_blank">Universiti Malaya (UM)</a>
+            </p>
 
-        <p class="overview-line">50630 Kuala Lumpur, Malaysia</p>
+            <p class="overview-line">50630 Kuala Lumpur, Malaysia</p>
 
-        <p class="overview-bio">
-            <span class="bio-label">Brief Bio:</span>
-            <span class="bio-name">Md. Minhazul Haq</span> is currently pursuing a Master of Engineering Science (Research) in Artificial Intelligence at Universiti Malaya, Malaysia, since November 2023. He is a recipient of the Universiti Malaya Scholarship Scheme (UMSS) as a Graduate Research Assistant (Nov. 2023 – Feb. 2026), conducting research in the field of Artificial Intelligence at the Centre of Intelligent Systems for Emerging Technology (CISET) Lab, Universiti Malaya. Minhazul is also appointed as a Graduate Teaching Assistant under the Universiti Malaya Graduate Teaching Assistantship (GTA) Scheme (Oct. 2025 – Feb. 2026). He received his Bachelor of Electrical Engineering from Jashore University of Science and Technology (JUST), Bangladesh, in 2022.
-        </p>
+            <p class="overview-bio">
+                <span class="bio-label">Brief Bio:</span>
+                <span class="bio-name">Md. Minhazul Haq</span> is currently pursuing a Master of Engineering Science (Research) in Artificial Intelligence at Universiti Malaya, Malaysia. He awarded Universiti Malaya Scholarship Scheme (UMSS) as a Graduate Research Assistant (Nov. 2023 – Feb. 2026), conducting research work in the field of Artificial Intelligence at the Centre of Intelligent Systems for Emerging Technology (CISET) Lab, Universiti Malaya. Minhazul is also appointed as a Graduate Teaching Assistant under the Universiti Malaya Graduate Teaching Assistantship (GTA) Scheme (Oct. 2025 – Feb. 2026). He received his Bachelor of Electrical and Electronic Engineering from Jashore University of Science and Technology (JUST), Bangladesh, in 2022.
+            </p>
 
-        <p class="overview-bio">
-            Minhazul’s research interests include Artificial Intelligence; Computer Vision on edge devices, Autonomous Transportation, Pedestrian Detection, and Internet of Things (IoT). His master’s dissertation title is “Optimization of Lightweight YOLO Models for Automated Object Detection on Embedded Devices”.
-        </p>
+            <p class="overview-bio">
+                Minhazul’s research interests include Artificial Intelligence; Computer Vision on edge devices, Autonomous Transportation, Pedestrian Detection, and Internet of Things (IoT). His master’s dissertation title is “Optimization of Lightweight YOLO Models for Automated Object Detection on Embedded Devices”.
+            </p>
+        </div>
     </section>
 
     <!-- ================= RESEARCH ================= -->
     <section id="research" class="content-section">
-        <h1>Research</h1>
-
         <div class="section-card">
+            <h1>Research</h1>
+
             <h3>Research Interests</h3>
             <ul>
                 <li>Lightweight deep learning</li>
@@ -174,9 +181,9 @@
 
     <!-- ================= PROJECTS ================= -->
     <section id="projects" class="content-section">
-        <h1>Projects</h1>
-
         <div class="section-card">
+            <h1>Projects</h1>
+
             <h3>Graduate Research Assistant Projects</h3>
             <ul>
                 <li>
@@ -223,9 +230,9 @@
 
     <!-- ================= TEACHING ================= -->
     <section id="teaching" class="content-section">
-        <h1>Teaching</h1>
-
         <div class="section-card">
+            <h1>Teaching</h1>
+
             <h3>Graduate Teaching Assistant / Lab Demonstrator</h3>
             <p><strong>LAB 2 (KIE1002), Department of Electrical Engineering, Universiti Malaya</strong></p>
             <p>Oct. 2025 – Feb. 2026</p>
@@ -241,9 +248,9 @@
 
     <!-- ================= AWARDS ================= -->
     <section id="awards" class="content-section">
-        <h1>Awards</h1>
-
         <div class="section-card">
+            <h1>Awards</h1>
+
             <h3>Awards and Achievements</h3>
             <ul>
                 <li>
@@ -282,9 +289,9 @@
 
     <!-- ================= CONTACT ================= -->
     <section id="contact" class="content-section">
-        <h1>Contact</h1>
-
         <div class="section-card">
+            <h1>Contact</h1>
+
             <h3>Contact Information</h3>
             <p><strong>Name:</strong> Md. Minhazul Haq</p>
             <p><strong>Email:</strong> minhaz.um.masters@gmail.com</p>
@@ -312,13 +319,21 @@
 </div>
 <!-- ================= MAIN CONTENT END ================= -->
 
-
 <!-- ================= JAVASCRIPT ================= -->
 <script>
 function showSection(sectionId) {
     const sections = document.querySelectorAll('.content-section');
+    const buttons = document.querySelectorAll('.top-menu button');
+
     sections.forEach(section => section.style.display = 'none');
+    buttons.forEach(button => button.classList.remove('active'));
+
     document.getElementById(sectionId).style.display = 'block';
+
+    const activeButton = document.querySelector(`.top-menu button[data-section="${sectionId}"]`);
+    if (activeButton) {
+        activeButton.classList.add('active');
+    }
 }
 
 window.onload = function() {
