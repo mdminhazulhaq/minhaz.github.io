@@ -1,368 +1,259 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Md. Minhazul Haq</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-<!-- ================= SIDEBAR START ================= -->
-<div class="sidebar">
-
-    <!-- Profile image -->
-    <img src="profile.jpg" class="profile-img" alt="Md. Minhazul Haq">
-
-    <div class="sidebar-content">
-
-        <!-- Sidebar role -->
-        <p class="role">Researcher</p>
-
-        <!-- Basic info -->
-        <p>📍 Kuala Lumpur, Malaysia</p>
-        <p>📧 minhaz.um.masters@gmail.com</p>
-
-        <!-- Sidebar links -->
-        <a href="https://scholar.google.com/citations?user=PNYyXa4AAAAJ&hl=en&oi=ao" target="_blank">🎓 Google Scholar</a>
-        <a href="CV%20of%20Md.%20Minhazul%20Haq.pdf" target="_blank">📄 CV</a>
-        <a href="https://github.com/mdminhazulhaq" target="_blank">💻 GitHub</a>
-
-        <!-- Skills -->
-        <div class="box">
-            <h3>Skills</h3>
-
-            <p>Python</p>
-            <div class="skill-bar"><div class="skill python">90%</div></div>
-
-            <p>C/C++</p>
-            <div class="skill-bar"><div class="skill cpp">80%</div></div>
-
-            <p>MATLAB</p>
-            <div class="skill-bar"><div class="skill matlab">85%</div></div>
-
-            <p>YOLO</p>
-            <div class="skill-bar"><div class="skill yolo">95%</div></div>
-
-            <p>OpenCV</p>
-            <div class="skill-bar"><div class="skill opencv">85%</div></div>
-        </div>
-
-        <!-- Languages -->
-        <div class="box">
-            <h3>Languages</h3>
-
-            <p>English</p>
-            <div class="skill-bar"><div class="skill eng">90%</div></div>
-
-            <p>Bangla</p>
-            <div class="skill-bar"><div class="skill ban">100%</div></div>
-
-            <p>Malay</p>
-            <div class="skill-bar"><div class="skill malay">50%</div></div>
-        </div>
-
-    </div>
-</div>
-<!-- ================= SIDEBAR END ================= -->
-
-
-<!-- ================= MAIN CONTENT START ================= -->
-<div class="main">
-
-    <!-- Main title header -->
-    <div class="main-header">
-        <h1 class="main-header-title">Md. Minhazul Haq</h1>
-    </div>
-
-    <!-- Top menu -->
-    <div class="top-menu">
-        <button onclick="showSection('overview')" data-section="overview">Overview</button>
-        <button onclick="showSection('education')" data-section="education">Education</button>
-        <button onclick="showSection('research')" data-section="research">Research</button>
-        <button onclick="showSection('projects')" data-section="projects">Projects</button>
-        <button onclick="showSection('teaching')" data-section="teaching">Teaching</button>
-        <button onclick="showSection('awards')" data-section="awards">Awards</button>
-        <button onclick="showSection('ielts')" data-section="ielts">IELTS</button>
-        <button onclick="showSection('contact')" data-section="contact">Contact</button>
-    </div>
-
-    <!-- ================= OVERVIEW ================= -->
-    <section id="overview" class="content-section">
-        <div class="section-card overview-card">
-
-            <p class="overview-role">Graduate Research Assistant &amp; Graduate Teaching Assistant</p>
-
-            <p class="overview-line">Master of Engineering Science (Research)</p>
-
-            <p class="overview-line">Department of Electrical Engineering</p>
-
-            <p class="overview-university">
-                <a href="https://www.um.edu.my/" target="_blank">Universiti Malaya (UM)</a>
-            </p>
-
-            <p class="overview-line">50630 Kuala Lumpur, Malaysia</p>
-
-            <p class="overview-bio">
-                <span class="bio-label">Brief Bio:</span>
-                <span class="bio-name">Md. Minhazul Haq</span> is currently pursuing a Master of Engineering Science (Research) in Artificial Intelligence at Universiti Malaya, Malaysia. He is a recipient of the Universiti Malaya Scholarship Scheme (UMSS) as a Graduate Research Assistant (Nov. 2023 – Feb. 2026), conducting research in the field of Artificial Intelligence at the Centre of Intelligent Systems for Emerging Technology (CISET) Lab, Universiti Malaya. Minhazul is also appointed as a Graduate Teaching Assistant under the Universiti Malaya Graduate Teaching Assistantship (GTA) Scheme (Oct. 2025 – Feb. 2026). He received his Bachelor of Electrical and Electronic Engineering from Jashore University of Science and Technology (JUST), Bangladesh, in 2022.
-            </p>
-
-            <p class="overview-bio">
-                His research interests include Artificial Intelligence, lightweight deep learning, computer vision on edge devices, autonomous transportation, pedestrian detection, and Internet of Things (IoT). His master’s dissertation title is “Optimization of Lightweight YOLO Models for Automated Object Detection on Embedded Devices”.
-            </p>
-
-        </div>
-    </section>
-
-    <!-- ================= EDUCATION ================= -->
-    <section id="education" class="content-section">
-        <div class="section-card">
-            <h3>Education</h3>
-
-            <ul>
-                <li>
-                    <strong>Master of Engineering Science (Artificial Intelligence)</strong><br>
-                    Universiti Malaya (UM), Kuala Lumpur, Malaysia<br>
-                    2024 – Present
-                </li>
-
-                <li>
-                    <strong>Bachelor of Science in Electrical and Electronic Engineering</strong><br>
-                    Jashore University of Science and Technology (JUST), Bangladesh<br>
-                    2018 – 2022
-                </li>
-            </ul>
-
-        </div>
-    </section>
-
-    <!-- ================= RESEARCH ================= -->
-    <section id="research" class="content-section">
-
-        <div class="section-card">
-            <h3>Publications</h3>
-            <ol>
-                <li>
-                    Md. Minhazul Haq, Anis Salwa Mohd Khairuddin, Effariza Hanafi, Hafiz Muhammad Fahad Noman, Mohamad Haniff Junos.
-                    <em>HAT-YOLO: Hybrid Attention and Transformer-Integrated Model for UAV Object Detection on Embedded Devices.</em>
-                    KSII Transactions on Internet and Information Systems, Vol. 20, No. 2, Feb. 2026.
-                    <a href="https://itiis.org/digital-library/105901" target="_blank">Paper</a>
-                </li>
-                <li>
-                    Yang Z, Khairuddin AS, Huang CJ, Ru WW, Noman HM, Putri TW, Xu X, Haq MM.
-                    <em>A Review of Short-Term, Long-Term, and Memory Consolidation Mechanisms in the Hippocampus and Cerebral Cortex.</em>
-                    IEEE Access, 2025.
-                    <a href="https://ieeexplore.ieee.org/document/10942600" target="_blank">Paper</a>
-                </li>
-                <li>
-                    Md. Minhazul Haq, Anis Salwa Mohd Khairuddin, Effariza Hanafi.
-                    <em>EdgeLite-YOLOv8n: An Efficient YOLOv8n Model for Real-Time Vehicle Detection in UAV Imagery on Embedded Platforms.</em>
-                    Submitted to 2nd International Transdisciplinary Research Conference 2026, Universiti Malaya.
-                </li>
-                <li>
-                    Md. Minhazul Haq, Anis Salwa Mohd Khairuddin, Effariza Hanafi.
-                    <em>Improved YOLOv8n model for Automated Wood Texture Defect Detection based on Computer Vision.</em>
-                    Ready to submit.
-                </li>
-                <li>
-                    Hasan, M. M., Khandaker, S., Md Ashikujjaman, &amp; Haq, M. M.
-                    <em>DEVELOPMENT OF PROTOTYPE DUAL-AXIS SOLAR TRACKING DEVICE FOR OPTIMAL POWER GENERATION AT RESIDENTIAL AREA IN BANGLADESH.</em>
-                    Journal of Energy and Safety Technology (JEST), 7(1), 25–33, 2024.
-                    <a href="https://jest.utm.my/index.php/jest/article/view/164" target="_blank">Paper</a>
-                </li>
-            </ol>
-        </div>
-
-        <div class="section-card">
-            <h3>Poster Presentation</h3>
-            <p>
-                Md. Omar Faruk, Md. Minhazul Haq, Anis Salwa B. M. Khairuddin, Effariza Hanafi, Karen L. Pua, and W. M. Tilakaratne.
-                <em>Real-Time Oral Cancer Detection Using Lightweight YOLOv8n-Based Deep Learning and Computer Vision: A Pilot Study.</em>
-                UMHEALTH - Academic Month &amp; Research Carnival 2025, Universiti Malaya.
-                <a href="poster.jpeg" target="_blank">Photo</a>
-            </p>
-        </div>
-
-        <div class="section-card">
-            <h3>Oral Presentation</h3>
-            <p>
-                <a href="Best-Presenter-Postgraduate%20Oral%20Presentation-Winner.jpg" target="_blank">Best Presenter (Postgraduate Oral Presentation) – Winner</a><br>
-                4th International Orthopaedic Postgraduate Symposium (IOPS4), Universiti Malaya, 29 Oct. 2025<br>
-                Title: <em>Lightweight YOLOv8 with Attention-Enhanced Backbone for Real-Time Paediatric Wrist Fracture Detection Using Resource-Constrained Devices</em>
-            </p>
-        </div>
-
-    </section>
-
-    <!-- ================= PROJECTS ================= -->
-    <section id="projects" class="content-section">
-
-        <div class="section-card">
-            <h3>Graduate Research Assistant Projects</h3>
-            <ul>
-                <li>
-                    <strong>Sustainable and Smart Food Packaging System, IMG001-2022</strong><br>
-                    Supervised by Associate Prof. Ir. Dr. Anis Salwa Binti Mohd Khairuddin and Dr. Effariza Hanafi<br>
-                    Universiti Malaya | Nov. 2023 – Jun. 2025
-                </li>
-                <li>
-                    <strong>Algae Cultivation</strong> and
-                    <strong>Fabrication of an Electrochemical Sensor with Nanocomposite Sensing Layer for Hydrogen Peroxide Detection</strong><br>
-                    Supervised by Ir. Dr. Suriani Binti Ibrahim and Associate Prof. Ir. Dr. Anis Salwa Binti Mohd Khairuddin<br>
-                    Universiti Malaya | Nov. 2024 – May 2025
-                </li>
-                <li>
-                    <strong>ARFES: Augmented Reality-based Educational Framework for Engineering Students, UMG002-2025ASPD</strong><br>
-                    Supervised by Dr. Effariza Hanafi<br>
-                    Universiti Malaya | Nov. 2025 – Feb. 2026
-                </li>
-            </ul>
-        </div>
-
-        <div class="section-card">
-            <h3>Model Development Projects (Master's)</h3>
-            <ul>
-                <li>HAT-YOLO for UAV object detection on embedded devices</li>
-                <li>EdgeLite-YOLOv8n for real-time vehicle detection in UAV imagery on embedded platforms</li>
-                <li>Improved YOLOv8n model for automated wood texture defect detection</li>
-            </ul>
-        </div>
-
-        <div class="section-card">
-            <h3>Undergraduate Thesis Project</h3>
-            <p>
-                <strong>Design of Solar Tracking System for Optimal Power Generation at Residential Area in Bangladesh</strong><br>
-                Bachelor of Electrical and Electronic Engineering, Jashore University of Science and Technology (JUST)
-            </p>
-        </div>
-
-    </section>
-
-    <!-- ================= TEACHING ================= -->
-    <section id="teaching" class="content-section">
-
-        <div class="section-card">
-            <h3>Graduate Teaching Assistant / Lab Demonstrator</h3>
-            <p><strong>LAB 2 (KIE1002), Department of Electrical Engineering, Universiti Malaya</strong></p>
-            <p>Oct. 2025 – Feb. 2026</p>
-            <ul>
-                <li>Conducted laboratory sessions for undergraduate engineering students in electrical and electromagnetic experiments.</li>
-                <li>Demonstrated and explained circuit laws, amplifiers, diode clipping, magnetic induction, Lorentz force, and PCB layout design.</li>
-                <li>Guided students in performing experiments and analysing results including voltage, current, capacitance, inductance, power, and gain.</li>
-                <li>Evaluated students’ practical understanding through interactive discussions and interview sessions.</li>
-                <li>Troubleshot function generators, digital oscilloscopes, and multimeters during lab sessions.</li>
-            </ul>
-        </div>
-
-    </section>
-
-    <!-- ================= AWARDS ================= -->
-    <section id="awards" class="content-section">
-
-        <div class="section-card">
-            <h3>Awards</h3>
-            <ul>
-                <li>
-                    <a href="Best-Presenter-Postgraduate%20Oral%20Presentation-Winner.jpg" target="_blank"><strong>Best Presenter (Postgraduate Oral Presentation) – Winner</strong></a><br>
-                    4th International Orthopaedic Postgraduate Symposium (IOPS4), Universiti Malaya, 29 Oct. 2025<br>
-                    Title: <em>Lightweight YOLOv8 with Attention-Enhanced Backbone for Real-Time Paediatric Wrist Fracture Detection Using Resource-Constrained Devices</em>
-                </li>
-                <li>
-                    <strong>Voice Controlled Humanoid Robot</strong><br>
-                    Best Project Award<br>
-                    Science Fair 2019, Jashore University of Science and Technology, Bangladesh
-                </li>
-                <li>
-                    <strong>Solar Scooter</strong><br>
-                    Best Project Award<br>
-                    Student to Startup 2.0 Campus Hunt, JUST, Bangladesh, Oct. 2019
-                </li>
-            </ul>
-        </div>
-
-        <div class="section-card">
-            <h3>Extra-Curricular Activities</h3>
-            <ul>
-                <li>Organizing Secretary, JUST Robo Society, Jashore University of Science and Technology (Mar. 2020 – Mar. 2021)</li>
-                <li>Organizer, Seminar on Artificial Intelligence and Machine Learning, JUST, 2020</li>
-                <li>Organizing Committee Member, HULT Prize at JUST, 2018</li>
-            </ul>
-        </div>
-
-    </section>
-
-    <!-- ================= IELTS ================= -->
-    <section id="ielts" class="content-section">
-
-        <div class="section-card">
-            <h3>Standardized Test Scores</h3>
-            <ul>
-                <li>IELTS – 8 Apr. 2025: Overall 7.0 (Speaking 7.5, Listening 7.5, Reading 7.0, Writing 6.0)</li>
-                <li>IELTS – 23 Jun. 2023: Overall 6.0 (Speaking 6.5, Listening 6.5, Reading 5.5, Writing 6.0)</li>
-            </ul>
-        </div>
-
-    </section>
-
-    <!-- ================= CONTACT ================= -->
-    <section id="contact" class="content-section">
-
-        <div class="section-card">
-            <h3>Contact Information</h3>
-            <p><strong>Name:</strong> Md. Minhazul Haq</p>
-            <p><strong>Email:</strong> minhaz.um.masters@gmail.com</p>
-            <p><strong>Phone:</strong> +60178899430</p>
-            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/md-minhazul-haq-45295a147/" target="_blank">md-minhazul-haq-45295a147</a></p>
-        </div>
-
-        <div class="section-card">
-            <h3>Academic References</h3>
-            <p>
-                <strong>Associate Prof. Ir. Dr. Anis Salwa Binti Mohd Khairuddin</strong><br>
-                Department of Electrical Engineering, Faculty of Engineering, Universiti Malaya<br>
-                Email: anissalwa@um.edu.my
-            </p>
-
-            <p>
-                <strong>Dr. Effariza Hanafi</strong><br>
-                Department of Electrical Engineering, Faculty of Engineering, Universiti Malaya<br>
-                Email: effarizahanafi@um.edu.my
-            </p>
-
-            <p>
-                <strong>Associate Prof. Dr. Imran Khan</strong><br>
-                Department of Electrical and Electronic Engineering, Faculty of Engineering, Jashore University of Science and Technology<br>
-                Email: i.khan@just.edu.bd
-            </p>
-        </div>
-
-    </section>
-
-</div>
-<!-- ================= MAIN CONTENT END ================= -->
-
-<!-- ================= JAVASCRIPT ================= -->
-<script>
-function showSection(sectionId) {
-    const sections = document.querySelectorAll('.content-section');
-    const buttons = document.querySelectorAll('.top-menu button');
-
-    sections.forEach(section => section.style.display = 'none');
-    buttons.forEach(button => button.classList.remove('active'));
-
-    document.getElementById(sectionId).style.display = 'block';
-
-    const activeButton = document.querySelector(`.top-menu button[data-section="${sectionId}"]`);
-    if (activeButton) {
-        activeButton.classList.add('active');
-    }
+/* ===== GENERAL PAGE SETTINGS ===== */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #efefef;
 }
 
-window.onload = function() {
-    showSection('overview');
-};
-</script>
+/* ===== SIDEBAR DESIGN ===== */
+.sidebar {
+    position: fixed;
+    left: 80px;
+    top: 0;
+    width: 340px;
+    height: 100vh;
+    background: #1e1e2f;
+    color: white;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
 
-</body>
-</html>
+/* ===== PROFILE IMAGE ===== */
+.profile-img {
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
+}
+
+/* ===== SIDEBAR CONTENT ===== */
+.sidebar-content {
+    padding: 15px;
+}
+
+/* ===== SIDEBAR ROLE ===== */
+.role {
+    color: lightgray;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+/* ===== SIDEBAR BASIC TEXT ===== */
+.sidebar p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+/* ===== SIDEBAR LINKS ===== */
+.sidebar a {
+    display: block;
+    color: white;
+    margin: 6px 0;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.sidebar a:hover {
+    text-decoration: underline;
+}
+
+/* ===== WHITE BOX ===== */
+.box {
+    background: white;
+    color: black;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 6px;
+}
+
+/* ===== SKILL BAR ===== */
+.skill-bar {
+    width: 100%;
+    background: #ddd;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+
+.skill {
+    height: 16px;
+    color: white;
+    text-align: right;
+    padding-right: 5px;
+    font-size: 11px;
+    border-radius: 4px;
+}
+
+/* ===== SKILL LEVELS ===== */
+.python { width: 90%; background: #4CAF50; }
+.cpp { width: 80%; background: #2196F3; }
+.matlab { width: 85%; background: #f39c12; }
+.yolo { width: 95%; background: #e74c3c; }
+.opencv { width: 85%; background: #9b59b6; }
+
+/* ===== LANGUAGE LEVELS ===== */
+.eng { width: 90%; background: #4CAF50; }
+.ban { width: 100%; background: #2ecc71; }
+.malay { width: 50%; background: #f39c12; }
+
+/* ===== MAIN CONTENT ===== */
+.main {
+    margin-left: 440px;
+    margin-right: 80px;
+    padding: 20px 25px 25px 25px;
+}
+
+/* ===== GREEN NAME HEADER ===== */
+.main-header {
+    background: #27bea8;
+    border: 1px solid #d7d7d7;
+    padding: 28px 20px 28px 20px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.main-header-title {
+    margin: 0;
+    font-size: 34px;
+    font-weight: 500;
+    color: #ffffff;
+    line-height: 1.2;
+}
+
+/* ===== TOP MENU ===== */
+.top-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+    background: #ffffff;
+    border-left: 1px solid #d7d7d7;
+    border-right: 1px solid #d7d7d7;
+    border-bottom: 1px solid #d7d7d7;
+    margin-bottom: 22px;
+}
+
+/* ===== TOP MENU BUTTON ===== */
+.top-menu button {
+    background: transparent;
+    color: #111111;
+    border: none;
+    padding: 16px 22px 15px 22px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 400;
+    border-bottom: 3px solid transparent;
+}
+
+.top-menu button:hover {
+    background: #f7f7f7;
+}
+
+.top-menu button.active {
+    border-bottom: 3px solid #1f88e5;
+}
+
+/* ===== CONTENT SECTION ===== */
+.content-section {
+    display: none;
+}
+
+/* ===== DEFAULT SECTION TITLE STYLE ===== */
+.content-section h1 {
+    margin-top: 0;
+    color: #1e1e2f;
+    font-size: 30px;
+}
+
+/* ===== DEFAULT TEXT STYLE ===== */
+.content-section p,
+.content-section li {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #333333;
+}
+
+/* ===== LINKS INSIDE MAIN CONTENT ===== */
+.main a {
+    color: #1e4365;
+    text-decoration: none;
+}
+
+.main a:hover {
+    text-decoration: underline;
+}
+
+/* ===== CONTENT CARD ===== */
+.section-card {
+    background: #ffffff;
+    padding: 22px;
+    border-radius: 0;
+    margin-bottom: 20px;
+    border: 1px solid #d8d8d8;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.section-card h3 {
+    margin-top: 0;
+    color: #1e1e2f;
+}
+
+.section-card ul,
+.section-card ol {
+    padding-left: 22px;
+}
+
+/* ===== OVERVIEW SECTION STYLE ===== */
+#overview {
+    font-family: "Times New Roman", Times, serif;
+    color: #111111;
+}
+
+.overview-card {
+    padding: 22px 24px 24px 24px;
+}
+
+.overview-role {
+    font-size: 18px;
+    color: #7a2f8f;
+    margin: 0 0 10px 0;
+    line-height: 1.5;
+}
+
+.overview-line {
+    font-size: 17px;
+    margin: 0 0 10px 0;
+    line-height: 1.5;
+}
+
+.overview-university {
+    font-size: 18px;
+    margin: 0 0 10px 0;
+    line-height: 1.5;
+}
+
+.overview-university a {
+    color: #7a2f8f;
+    font-style: italic;
+    text-decoration: none;
+}
+
+.overview-university a:hover {
+    text-decoration: underline;
+}
+
+.overview-bio {
+    font-size: 17px;
+    line-height: 1.5;
+    text-align: justify;
+    margin: 20px 0 0 0;
+}
+
+.bio-label {
+    font-weight: 400;
+}
+
+.bio-name {
+    font-weight: 700;
+    color: #1e4365;
+}
