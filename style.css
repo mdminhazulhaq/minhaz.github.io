@@ -91,6 +91,7 @@ body {
 .matlab { width: 85%; background: #f39c12; }
 .yolo { width: 95%; background: #e74c3c; }
 .opencv { width: 85%; background: #9b59b6; }
+.rf-detr { width: 85%; background: #4CAF50; }
 
 /* ===== LANGUAGE LEVELS ===== */
 .eng { width: 90%; background: #4CAF50; }
